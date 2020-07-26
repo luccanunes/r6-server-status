@@ -41,9 +41,9 @@ def get_loadout(op):
     return {"loadout": loadout, "gadget": gadget}
 
 
-txt = open('src/op_info.txt', 'w')
-ops = get_oplist()
-txt.write(str(ops))
+# txt = open('src/op_info.txt', 'w')
+# ops = get_oplist()
+# txt.write(str(ops))
 
 # op_txt = open('src/ops.txt', 'w')
 # lo_txt = open('src/lo.txt', 'w')
