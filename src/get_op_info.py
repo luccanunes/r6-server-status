@@ -1,5 +1,6 @@
 def get_oplist():
     import requests
+    from unidecode import unidecode
     from bs4 import BeautifulSoup
 
     URL = 'https://www.ubisoft.com/pt-br/game/rainbow-six/siege/game-info/operators'
@@ -15,18 +16,18 @@ def get_oplist():
     ops_raw = soup.select('.oplist__card')
     ops = dict()
     for op in ops_raw:
-        ops[op.text.lower()] = dict()
-        ops[op.text.lower()] = get_loadout(op.text)
+        ops[unidecode(op.text.lower())] = dict()
+        ops[unidecode(op.text.lower())] = get_loadout(op.text)
     return ops
 
 
 def get_loadout(op):
     import requests
     from bs4 import BeautifulSoup
+    from unidecode import unidecode
 
     loadout = list()
-    URL = f'https://www.ubisoft.com/pt-br/game/rainbow-six/siege/game-info/operators/{op}'.replace(
-        'Ø', 'O').replace('Ã', 'A').replace('ä', 'a')
+    URL = unidecode(f'https://www.ubisoft.com/pt-br/game/rainbow-six/siege/game-info/operators/{op}')
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
     }
@@ -34,16 +35,23 @@ def get_loadout(op):
     soup = BeautifulSoup(page.content, 'html.parser')
 
     weapons = soup.select('.operator__loadout__weapon')
-    gadget = weapons[-1].text.replace('Ø','O').replace('Ã', 'A').replace('ä', 'a').replace('ç', 'c').replace('ã', 'a')
+    gadget = unidecode(weapons[-1].text)
     for weapon in weapons:
         if weapon != weapons[-1]:
-            loadout.append(weapon.text.replace('\n', ' ').replace('Ø', 'O').replace('Ã', 'A').replace('ä', 'a').replace('ç', 'c').replace('ã', 'a'))
+            info = weapon.find_all('p')
+            string = ''
+            for inf in info:
+                if inf == info[0]:
+                    string += f'{inf.text} '
+                else:
+                    string += f'{inf.text.capitalize()} '
+            loadout.append(unidecode(string.strip()))
     return {"loadout": loadout, "gadget": gadget}
 
 
-# txt = open('src/op_info.txt', 'w')
-# ops = get_oplist()
-# txt.write(str(ops))
+txt = open('src/op_info.txt', 'w')
+ops = get_oplist()
+txt.write(str(ops))
 
 # op_txt = open('src/ops.txt', 'w')
 # lo_txt = open('src/lo.txt', 'w')

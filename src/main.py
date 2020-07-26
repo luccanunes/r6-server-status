@@ -4,6 +4,7 @@ from get_server_status import get_server_status, format_dict
 from get_news import get_news
 from ops import ops
 from format_op import format_op
+from unidecode import unidecode
 
 client = discord.Client()
 
@@ -50,7 +51,7 @@ async def on_message(message):
             await message.channel.send(string)
         elif message.content.lower().startswith(f'{prefix}agent'):
             try:
-                op = message.content.lower().split(' ')[1]
+                op = unidecode(message.content.lower().split(' ')[1])
             except:
                 await message.channel.send(f"Please give me a valid agent")
             else:
