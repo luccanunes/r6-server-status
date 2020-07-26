@@ -21,8 +21,8 @@ def get_news():
     news_dates = dict()
 
     for i in range(0, len(news_raw)):
-        new = news_raw[i].text
-        date = dates_raw[i+1].text
+        new = news_raw[i].text.capitalize()
+        date = dates_raw[i+1].text.capitalize()
         news_dates[new] = date
 
     return news_dates
