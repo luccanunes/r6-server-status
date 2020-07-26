@@ -2,6 +2,8 @@ def text(tag):
     i = tag.find('>')
     j = tag.find('<', 1)
     return tag[i+1:j]
+
+
 def title(div):
     ops = list()
     i = div.find('>')
@@ -9,10 +11,9 @@ def title(div):
     for j in range(1, len(imgs)):
         index = imgs[j].find('title')
         imgs[j] = imgs[j][index:]
-        imgs[j] = imgs[j].split('"') 
+        imgs[j] = imgs[j].split('"')
         ops.append(imgs[j][1])
     return ops
-
 
 
 def get_player_info(platform, player):
@@ -31,26 +32,25 @@ def get_player_info(platform, player):
     page = requests.get(URL, headers=headers)
     soup = BeautifulSoup(page.content, 'html.parser')
 
-
     # * OVERVIEW - document.getElementsByClassName("trn-card--dark-header")[0]
     overview_raw = soup.select(".trn-card--dark-header")[0]
     overview_names = overview_raw.select(".trn-defstat__name")
     overview_values = overview_raw.select(".trn-defstat__value")
     overview = dict()
-    for i in range(0, len(overview_names) - 7): # ? it just kept adding random stuff 
+    for i in range(0, len(overview_names) - 7):  # ? it just kept adding random stuff
         name = text(str(overview_names[i])).strip()
         value = text(str(overview_values[i])).strip()
         if name == 'Top Operators':
             value = title(str(overview_values[i]))
         if name not in overview.keys():
             overview[name] = value
-    
+
     # * RANKED - document.getElementsByClassName("trn-card__content")[6]
     ranked_raw = soup.select(".trn-card__content")[8]
     ranked_names = ranked_raw.select(".trn-defstat__name")
     ranked_values = ranked_raw.select(".trn-defstat__value")
     ranked = dict()
-    for i in range(0, len(ranked_names)): 
+    for i in range(0, len(ranked_names)):
         name = text(str(ranked_names[i])).strip()
         value = text(str(ranked_values[i])).strip()
         if name not in ranked.keys():
@@ -61,7 +61,7 @@ def get_player_info(platform, player):
     season_names = season_raw.select(".trn-defstat__name")
     season_values = season_raw.select(".trn-defstat__value")
     season = dict()
-    for i in range(0, len(season_names)): 
+    for i in range(0, len(season_names)):
         name = text(str(season_names[i])).strip()
         value = text(str(season_values[i])).strip()
         if name not in season.keys():
@@ -74,3 +74,12 @@ def get_player_info(platform, player):
     data["season"] = season
 
     return data
+
+
+def format_player_info(data):
+    string = ''
+    for key in data.keys():
+        string += f'**{key.upper()}**\n'
+        for subkey in data[key]:
+            string += f'{subkey}: {data[key][subkey]}\n'
+    return string
