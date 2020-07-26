@@ -68,4 +68,9 @@ def get_player_info(platform, player):
             season[name] = value
 
     # * DATA
-get_player_info('pc', 'Froezao.BIG')
+    data = dict()
+    data["overview"] = overview
+    data["ranked"] = ranked
+    data["season"] = season
+
+    return data
