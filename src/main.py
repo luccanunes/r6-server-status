@@ -1,6 +1,7 @@
 import discord
 import asyncio
-from get_info import get_info, format_dict
+from get_server_status import get_server_status, format_dict
+from get_news import get_news
 
 client = discord.Client()
 
@@ -15,30 +16,35 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.lower().startswith('?help'):
-        await message.channel.send(
-            "Here's a list of all commands! ```?pcstats - shows info regarding the status of the PC servers\n?ps4stats - shows info regarding the status of the PS4 servers\n?xboxstats - shows info regarding the status of the Xbox One servers```"
-        )
-    elif message.content.lower().startswith('?pcstats'):
-        await message.channel.send("Getting info...")
-        data = get_info()
-        info = format_dict(data["pc"])
-        last_updt = data["last-update"]
-        await message.channel.send(f"Last update: {last_updt}")
-        await message.channel.send(info)
-    elif message.content.lower().startswith('?ps4stats'):
-        await message.channel.send("Getting info...")
-        data = get_info()
-        info = format_dict(data["ps4"])
-        last_updt = data["last-update"]
-        await message.channel.send(f"Last update: {last_updt}")
-        await message.channel.send(info)
-    elif message.content.lower().startswith('?xboxstats'):
-        await message.channel.send("Getting info...")
-        data = get_info()
-        info = format_dict(data["xbox"])
-        last_updt = data["last-update"]
-        await message.channel.send(f"Last update: {last_updt}")
-        await message.channel.send(info)
+    prefix = '?'
+    if message.content.lower().startswith(f'{prefix}'):
+        if message.content.lower().startswith(f'{prefix}help'):
+            await message.channel.send(
+                f"Here's a list of all commands! ```{prefix}pcstats - shows info regarding the status of the PC servers\n{prefix}ps4stats - shows info regarding the status of the PS4 servers\n{prefix}xboxstats - shows info regarding the status of the Xbox One servers\n{prefix}news - shows the recente news/updates in R6```"
+            )
+        elif 'stats' in message.content.lower():
+            await message.channel.send("```Getting info...```")
+            if message.content.lower().startswith(f'{prefix}pcstats'):
+                status = get_server_status()
+                info = format_dict(status["pc"])
+                await message.channel.send(info)
+            elif message.content.lower().startswith(f'{prefix}ps4stats'):
+                status = get_server_status()
+                info = format_dict(status["ps4"])
+                await message.channel.send(info)
+            elif message.content.lower().startswith(f'{prefix}xboxstats'):
+                status = get_server_status()
+                info = format_dict(status["xbox"])
+                await message.channel.send(info)
+            elif message.content.lower().startswith(f'{prefix}lastupdate'):
+                last_updt = status["last-update"]
+                await message.channel.send(last_updt)
+        elif message.content.lower().startswith(f'{prefix}news'):
+            await message.channel.send("```Getting info...```")
+            news = get_news()
+            string = ''
+            for new, date in news.items():
+                string += f'{new} - {date}\n'
+            await message.channel.send(string)
 
 client.run('NzM2NzY2NDg0MDU5MjU4OTMx.XxzlQg._8lktwlNtqNccRRO8vu62LQwHQI')

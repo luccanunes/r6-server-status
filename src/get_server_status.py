@@ -1,4 +1,4 @@
-def get_info():
+def get_server_status():
     from selenium import webdriver
     from console_log import clog
 
@@ -41,7 +41,7 @@ def get_info():
 
 
 def format_dict(dict):
-    string = f"{dict['name']} SERVER STATUS"
+    string = f"**{dict['name']} SERVER STATUS**"
     for key in list(dict.keys())[1:]:
         string += f'\n{key}: {dict[key]}'
     return string
