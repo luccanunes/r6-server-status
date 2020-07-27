@@ -77,9 +77,19 @@ def get_player_info(platform, player):
 
 
 def format_player_info(data):
-    string = ''
-    for key in data.keys():
-        string += f'**{key.upper()}**\n'
-        for subkey in data[key]:
-            string += f'{subkey}: {data[key][subkey]}\n'
-    return string
+    import discord
+    ov = discord.Embed(title='Overview', colour=discord.Color.from_rgb(244, 175, 44))
+    for info in data["overview"].keys():
+        if type(data["overview"][info]) is not list:
+            ov.add_field(name=info, value=data["overview"][info])
+        else:
+            string = f'{data["overview"][info][0].capitalize()}, {data["overview"][info][1].capitalize()} and {data["overview"][info][2].capitalize()}'
+            ov.add_field(name=info, value=string)
+    rd = discord.Embed(title='Ranked', colour=discord.Color.from_rgb(244, 175, 44))
+    for info in data["ranked"].keys():
+        rd.add_field(name=info, value=data["ranked"][info])
+    sn = discord.Embed(title='Season', colour=discord.Color.from_rgb(244, 175, 44))
+    for info in data["season"].keys():
+        sn.add_field(name=info, value=data["season"][info])
+
+    return {'overview': ov, 'ranked': rd, 'season': sn}

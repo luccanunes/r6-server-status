@@ -23,7 +23,7 @@ async def on_message(message):
     prefix = '?'
     if message.content.lower().startswith(f'{prefix}'):
         if message.content.lower().startswith(f'{prefix}help'):
-            msg = discord.Embed(title='Commands', description="Here's a list of all commands!", colour=discord.Color.from_rgb(244, 175, 44))
+            msg = discord.Embed(title='Commands', description="Here's a list of all commands!")
             msg.add_field(name=f'{prefix}pcstats', value='shows info regarding the status of the PC servers')
             msg.add_field(name=f'{prefix}ps4stats', value='shows info regarding the status of the PS4 servers')
             msg.add_field(name=f'{prefix}xboxstats', value='shows info regarding the status of the Xbox One servers')
@@ -35,18 +35,18 @@ async def on_message(message):
             if message.content.lower().startswith(f'{prefix}pcstats'):
                 status = get_server_status()
                 info = format_dict(status["pc"])
-                await message.channel.send(info)
+                await message.channel.send(embed=info)
             elif message.content.lower().startswith(f'{prefix}ps4stats'):
                 status = get_server_status()
                 info = format_dict(status["ps4"])
-                await message.channel.send(info)
+                await message.channel.send(embed=info)
             elif message.content.lower().startswith(f'{prefix}xboxstats'):
                 status = get_server_status()
                 info = format_dict(status["xbox"])
-                await message.channel.send(info)
+                await message.channel.send(embed=info)
             elif message.content.lower().startswith(f'{prefix}lastupdate'):
                 last_updt = status["last-update"]
-                await message.channel.send(last_updt)
+                await message.channel.send(embed=last_updt)
         elif message.content.lower().startswith(f'{prefix}news'):
             await message.channel.send("```Getting info...```")
             news = get_news()
@@ -69,12 +69,17 @@ async def on_message(message):
                 player = unidecode(message.content.lower().split(' ')[1])
                 platform = unidecode(message.content.lower().split(' ')[2]).lower()
             except:
-                await message.channel.send(f"Please give me a valid player name and/or platform")
+                msg = discord.Embed(title='Error', description=f"Please give me a valid player name and/or platform", colour=discord.Color.from_rgb(255, 0, 0))
+                await message.channel.send(embed=msg)
             else:
                 try:
                     await message.channel.send("```Getting info...```")
-                    await message.channel.send(format_player_info(get_player_info(platform, player)))
+                    player_info = format_player_info(get_player_info(platform, player))
+                    await message.channel.send(embed=player_info["overview"])
+                    await message.channel.send(embed=player_info["ranked"])
+                    await message.channel.send(embed=player_info["season"])
                 except:
-                    await message.channel.send(f"Failed to find {player}'s information! Please check player's name and platform and try again")
+                    msg = discord.Embed(title='Error', description=f"Failed to find {player}'s information! Please check player's name and platform and try again", colour=discord.Color.from_rgb(255, 0, 0))
+                    await message.channel.send(embed=msg)
 
 client.run('NzM2NzY2NDg0MDU5MjU4OTMx.XxzlQg._8lktwlNtqNccRRO8vu62LQwHQI')

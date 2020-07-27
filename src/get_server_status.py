@@ -41,7 +41,8 @@ def get_server_status():
 
 
 def format_dict(dict):
-    string = f"**{dict['name']} SERVER STATUS**"
+    import discord
+    msg = discord.Embed(title=f"{dict['name']} Server Status", colour=discord.Color.from_rgb(244, 175, 44))
     for key in list(dict.keys())[1:]:
-        string += f'\n{key}: {dict[key]}'
-    return string
+        msg.add_field(name=f'\n{key}', value=f'{dict[key]}')
+    return msg

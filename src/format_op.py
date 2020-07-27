@@ -1,7 +1,7 @@
 def format_op(op):
     import discord
     from ops import ops
-    msg = discord.Embed(title=f'{op.capitalize()}', colour=discord.Color.from_rgb(244, 175, 44))
+    msg = discord.Embed(title=f'{op.upper()}', colour=discord.Color.from_rgb(244, 175, 44))
     for item in ops[op].keys():
         if type(ops[op][item]) is list:
             string = ''
