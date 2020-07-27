@@ -23,9 +23,13 @@ async def on_message(message):
     prefix = '?'
     if message.content.lower().startswith(f'{prefix}'):
         if message.content.lower().startswith(f'{prefix}help'):
-            await message.channel.send(
-                f"Here's a list of all commands! ```{prefix}pcstats - shows info regarding the status of the PC servers\n{prefix}ps4stats - shows info regarding the status of the PS4 servers\n{prefix}xboxstats - shows info regarding the status of the Xbox One servers\n{prefix}news - shows the recente news/updates in R6\n{prefix}agent (agent name) - shows agent's general info\n{prefix}player (player name) (platform) - tracks player's info```"
-            )
+            msg = discord.Embed(title='Commands', description="Here's a list of all commands!", colour=discord.Color.from_rgb(244, 175, 44))
+            msg.add_field(name=f'{prefix}pcstats', value='shows info regarding the status of the PC servers')
+            msg.add_field(name=f'{prefix}ps4stats', value='shows info regarding the status of the PS4 servers')
+            msg.add_field(name=f'{prefix}xboxstats', value='shows info regarding the status of the Xbox One servers')
+            msg.add_field(name=f'{prefix}agent (agent name)', value="shows agent's general info")
+            msg.add_field(name=f'{prefix}player (name) (platform)', value="tracks player's info")
+            await message.channel.send(embed=msg)
         elif 'stats' in message.content.lower():
             await message.channel.send("```Getting info...```")
             if message.content.lower().startswith(f'{prefix}pcstats'):

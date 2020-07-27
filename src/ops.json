@@ -1,599 +1,767 @@
 {
   "ace": {
     "loadout": [
-      "AK-12RIFLE DE ASSALTO",
-      "M1014ESPINGARDA",
-      "P9ARMA CURTA",
+      "AK-12 Rifle de assalto",
+      "M1014 Espingarda",
+      "P9 Arma curta",
       "Carga de demolicao",
       "Granada de fumaca"
     ],
-    "gadget": "S.E.L.M.A. AQUA BREACHER"
+    "gadget": "S.E.L.M.A. AQUA BREACHER",
+    "side": "Atacante",
+    "hole": "Front-line, hard-breach",
+    "armor/speed": [2, 2]
   },
   "melusi": {
     "loadout": [
-      "T-5 SMGSUBMETRALHADORA",
-      "Super 90ESPINGARDA",
-      "RG15ARMA CURTA",
+      "T-5 SMG Submetralhadora",
+      "Super 90 Espingarda",
+      "RG15 Arma curta",
       "Granada de impacto",
-      "Escudo ajust�vel"
+      "Escudo ajustavel"
     ],
-    "gadget": "BANSHEE SONIC DEFENSE"
+    "gadget": "BANSHEE SONIC DEFENSE",
+    "side": "Defensor",
+    "hole": "Crowd-control, intel-gatherer, secure",
+    "armor/speed": [1, 3]
   },
   "oryx": {
     "loadout": [
-      "SPAS-12ESPINGARDA",
-      "MP5SUBMETRALHADORA",
-      "Bailiff 410ARMA CURTA",
-      "USP40ARMA CURTA",
+      "SPAS-12 Espingarda",
+      "MP5 Submetralhadora",
+      "Bailiff 410 Arma curta",
+      "USP40 Arma curta",
       "Arame farpado",
-      "C�mera � prova de balas"
+      "Camera a prova de balas"
     ],
-    "gadget": "REMAH DASH"
+    "gadget": "REMAH DASH",
+    "side": "Defensor",
+    "hole": "Roam, soft-breach",
+    "armor/speed": [2, 2]
   },
   "iana": {
     "loadout": [
-      "ARX200RIFLE DE ASSALTO",
-      "G36CRIFLE DE ASSALTO",
-      "Mk1 9mmARMA CURTA",
+      "ARX200 Rifle de assalto",
+      "G36C Rifle de assalto",
+      "Mk1 9mm Arma curta",
       "Granada frag",
       "Granada de fumaca"
     ],
-    "gadget": "REPLICADOR GEMINI"
+    "gadget": "REPLICADOR GEMINI",
+    "side": "Atacante",
+    "hole": "Intel-denier, intel-gatherer",
+    "armor/speed": [2, 2]
   },
   "wamai": {
     "loadout": [
-      "AUG A2RIFLE DE ASSALTO",
-      "MP5KSUBMETRALHADORA",
-      "D-40ARMA CURTA",
-      "P12ARMA CURTA",
+      "AUG A2 Rifle de assalto",
+      "MP5K Submetralhadora",
+      "D-40 Arma curta",
+      "P12 Arma curta",
       "Arame farpado",
-      "Escudo ajust�vel"
+      "Escudo ajustavel"
     ],
-    "gadget": "sistema mag-net"
+    "gadget": "sistema mag-net",
+    "side": "Defensor",
+    "hole": "Anchor, secure",
+    "armor/speed": [2, 2]
   },
   "kali": {
     "loadout": [
-      "CSRX 300RIFLE ATIRADOR DE ELITE",
-      "P226 Mk 25ARMA CURTA",
-      "C75 AutoPISTOLA-METRALHADORA",
+      "CSRX 300 Rifle atirador de elite",
+      "P226 Mk 25 Arma curta",
+      "C75 Auto Pistola-metralhadora",
       "Carga de demolicao"
     ],
-    "gadget": "Claymore"
+    "gadget": "Claymore",
+    "side": "Atacante",
+    "hole": "Back-line, covering-fire, disable",
+    "armor/speed": [2, 2]
   },
   "amaru": {
     "loadout": [
-      "G8A1METRALHADORA LEVE",
-      "SuperNovaESPINGARDA",
-      "ITA12SESPINGARDA",
-      "SMG-11PISTOLA-METRALHADORA",
+      "G8A1 Metralhadora leve",
+      "SuperNova Espingarda",
+      "ITA12S Espingarda",
+      "SMG-11 Pistola-metralhadora",
       "Granada atordoante",
       "Claymore"
     ],
-    "gadget": "GANCHO GARRA"
+    "gadget": "GANCHO GARRA",
+    "side": "Atacante",
+    "hole": "Flank, front-line",
+    "armor/speed": [2, 2]
   },
   "goyo": {
     "loadout": [
-      "Vector .45 ACPSUBMETRALHADORA",
-      "TCSG12ESPINGARDA",
-      "P229 RCARMA CURTA",
+      "Vector .45 ACP Submetralhadora",
+      "TCSG12 Espingarda",
+      "P229 RC Arma curta",
       "Granada de impacto",
       "C4"
     ],
-    "gadget": "ESCUDO VOLC�N"
+    "gadget": "ESCUDO VOLCAN",
+    "side": "Defensor",
+    "hole": "Area-denial, secure",
+    "armor/speed": [2, 2]
   },
-  "n�kk": {
+  "nokk": {
     "loadout": [
-      "FMG-9SUBMETRALHADORA",
-      "SIX12 SDESPINGARDA",
-      "5.7 USGARMA CURTA",
-      "D-50ARMA CURTA",
+      "FMG-9 Submetralhadora",
+      "SIX12 SD Espingarda",
+      "5.7 USG Arma curta",
+      "D-50 Arma curta",
       "Carga de demolicao",
       "Claymore"
     ],
-    "gadget": "REDUTOR DE PRESEN�A HEL"
+    "gadget": "REDUTOR DE PRESENCA HEL",
+    "side": "Atacante",
+    "hole": "Flank, intel-denier",
+    "armor/speed": [2, 2]
   },
   "warden": {
     "loadout": [
-      "M590A1ESPINGARDA",
-      "MPXSUBMETRALHADORA",
-      "P-10CARMA CURTA",
-      "SMG-12PISTOLA-METRALHADORA",
-      "Escudo ajust�vel",
+      "M590A1 Espingarda",
+      "MPX Submetralhadora",
+      "P-10C Arma curta",
+      "SMG-12 Pistola-metralhadora",
+      "Escudo ajustavel",
       "C4"
     ],
-    "gadget": "OLHAR COM SMARTGLASSES"
+    "gadget": "OLHAR COM SMARTGLASSES",
+    "side": "Defensor",
+    "hole": "Anchor, intel-denier",
+    "armor/speed": [2, 2]
   },
   "mozzie": {
     "loadout": [
-      "Commando 9RIFLE DE ASSALTO",
-      "P10 RONISUBMETRALHADORA",
-      "Super ShortyESPINGARDA",
-      "SDP 9mmARMA CURTA",
+      "Commando 9 Rifle de assalto",
+      "P10 RONI Submetralhadora",
+      "Super Shorty Espingarda",
+      "SDP 9mm Arma curta",
       "Arame farpado",
       "C4"
     ],
-    "gadget": "LAN�ADOR DE PESTE"
+    "gadget": "LANCADOR DE PESTE",
+    "side": "Defensor",
+    "hole": "Intel-denier, intel-gatherer, secure",
+    "armor/speed": [2, 2]
   },
   "gridlock": {
     "loadout": [
-      "F90RIFLE DE ASSALTO",
-      "M249METRALHADORA LEVE",
-      "Super ShortyESPINGARDA",
-      "SDP 9mmARMA CURTA",
+      "F90 Rifle de assalto",
+      "M249 Metralhadora leve",
+      "Super Shorty Espingarda",
+      "SDP 9mm Arma curta",
       "Granada de fumaca",
       "Carga de demolicao"
     ],
-    "gadget": "TRAX STINGERS"
+    "gadget": "TRAX STINGERS",
+    "side": "Atacante",
+    "hole": "Anti-roam, area-denial, crowd-control",
+    "armor/speed": [3, 1]
   },
   "nomad": {
     "loadout": [
-      "AK-74MRIFLE DE ASSALTO",
-      "ARX200RIFLE DE ASSALTO",
-      ".44 MAG SEMI-AUTOARMA CURTA",
+      "AK-74M Rifle de assalto",
+      "ARX200 Rifle de assalto",
+      ".44 MAG SEMI-AUTO Arma curta",
       "Carga de demolicao",
       "Granada atordoante"
     ],
-    "gadget": "LAN�ADOR DE AIRJAB"
+    "gadget": "LANCADOR DE AIRJAB",
+    "side": "Atacante",
+    "hole": "Anti-roam, crowd-control, trap",
+    "armor/speed": [2, 2]
   },
   "kaid": {
     "loadout": [
-      "AUG A3SUBMETRALHADORA",
-      "TCSG12ESPINGARDA",
-      ".44 MAG SEMI-AUTOARMA CURTA",
+      "AUG A3 Submetralhadora",
+      "TCSG12 Espingarda",
+      ".44 MAG SEMI-AUTO Arma curta",
       "Arame farpado",
       "C4"
     ],
-    "gadget": "RTILA ELECTROCLAW"
+    "gadget": "RTILA ELECTROCLAW",
+    "side": "Defensor",
+    "hole": "Anchor, anti-hard-breach, secure",
+    "armor/speed": [3, 1]
   },
   "clash": {
     "loadout": [
       "ESCUDO CCE",
-      "P-10CARMA CURTA",
-      "SPSMG9PISTOLA-METRALHADORA",
+      "P-10C Arma curta",
+      "SPSMG9 Pistola-metralhadora",
       "Arame farpado",
       "Granada de impacto"
     ],
-    "gadget": "ESCUDO CCE"
+    "gadget": "ESCUDO CCE",
+    "side": "Defensor",
+    "hole": "Crowd-control, intel-gatherer, secure, shield",
+    "armor/speed": [3, 1]
   },
   "maverick": {
     "loadout": [
-      "AR-15.50RIFLE DE ASSALTO",
-      "M4 GSRIFLE DE ASSALTO",
-      "1911 TACOPSARMA CURTA",
+      "AR-15.50 Rifle de assalto",
+      "M4 GS Rifle de assalto",
+      "1911 TACOPS Arma curta",
       "Granada atordoante",
       "Claymore"
     ],
-    "gadget": "MA�ARICO DE DEMOLI�AO"
+    "gadget": "MACARICO DE DEMOLICAO",
+    "side": "Atacante",
+    "hole": "Back-line, disable, flank, hard-breach",
+    "armor/speed": [1, 3]
   },
   "maestro": {
     "loadout": [
-      "ALDA 5.56METRALHADORA LEVE",
-      "ACS12ESPINGARDA",
-      "Keratos .357ARMA CURTA",
-      "Bailiff 410ARMA CURTA",
+      "ALDA 5.56 Metralhadora leve",
+      "ACS12 Espingarda",
+      "Keratos .357 Arma curta",
+      "Bailiff 410 Arma curta",
       "Arame farpado",
       "Granada de impacto"
     ],
-    "gadget": "EVIL EYE"
+    "gadget": "EVIL EYE",
+    "side": "Defensor",
+    "hole": "Anchor, area-denial, intel-gatherer, secure",
+    "armor/speed": [3, 1]
   },
   "alibi": {
     "loadout": [
-      "Mx4 StormSUBMETRALHADORA",
-      "ACS12ESPINGARDA",
-      "Keratos .357ARMA CURTA",
-      "Bailiff 410ARMA CURTA",
+      "Mx4 Storm Submetralhadora",
+      "ACS12 Espingarda",
+      "Keratos .357 Arma curta",
+      "Bailiff 410 Arma curta",
       "Granada de impacto",
-      "Escudo ajust�vel"
+      "Escudo ajustavel"
     ],
-    "gadget": "PRISMA"
+    "gadget": "PRISMA",
+    "side": "Defensor",
+    "hole": "Intel-denier, intel-gatherer, roam, trap",
+    "armor/speed": [1, 3]
   },
   "lion": {
     "loadout": [
-      "V308RIFLE DE ASSALTO",
-      "417RIFLE ATIRADOR DE ELITE",
-      "SG-CQBESPINGARDA",
-      "P9ARMA CURTA",
-      "LFP586ARMA CURTA",
+      "V308 Rifle de assalto",
+      "417 Rifle atirador de elite",
+      "SG-CQB Espingarda",
+      "P9 Arma curta",
+      "LFP586 Arma curta",
       "Granada atordoante",
       "Claymore"
     ],
-    "gadget": "EE-ONE-D"
+    "gadget": "EE-ONE-D",
+    "side": "Atacante",
+    "hole": "Anti-roam, back-line, crowd-control, intel-gatherer",
+    "armor/speed": [2, 2]
   },
   "finka": {
     "loadout": [
-      "Spear .308RIFLE DE ASSALTO",
-      "6P41METRALHADORA LEVE",
-      "SASG-12ESPINGARDA",
-      "PMMARMA CURTA",
-      "GSh-18ARMA CURTA",
+      "Spear .308 Rifle de assalto",
+      "6P41 Metralhadora leve",
+      "SASG-12 Espingarda",
+      "PMM Arma curta",
+      "GSh-18 Arma curta",
       "Carga de demolicao",
       "Granada frag"
     ],
-    "gadget": "PICO DE ADRENALINA"
+    "gadget": "PICO DE ADRENALINA",
+    "side": "Atacante",
+    "hole": "Back-line, buff",
+    "armor/speed": [2, 2]
   },
   "vigil": {
     "loadout": [
-      "K1ASUBMETRALHADORA",
-      "BOSG.12.2ESPINGARDA",
-      "C75 AutoPISTOLA-METRALHADORA",
-      "SMG-12PISTOLA-METRALHADORA",
-      "C�mera � prova de balas",
+      "K1A Submetralhadora",
+      "BOSG.12.2 Espingarda",
+      "C75 Auto Pistola-metralhadora",
+      "SMG-12 Pistola-metralhadora",
+      "Camera a prova de balas",
       "Granada de impacto"
     ],
-    "gadget": "ERC-7"
+    "gadget": "ERC-7",
+    "side": "Defensor",
+    "hole": "Intel-denier, roam",
+    "armor/speed": [1, 3]
   },
   "dokkaebi": {
     "loadout": [
-      "Mk 14 EBRRIFLE ATIRADOR DE ELITE",
-      "BOSG.12.2ESPINGARDA",
-      "C75 AutoPISTOLA-METRALHADORA",
-      "SMG-12PISTOLA-METRALHADORA",
+      "Mk 14 EBR Rifle atirador de elite",
+      "BOSG.12.2 Espingarda",
+      "C75 Auto Pistola-metralhadora",
+      "SMG-12 Pistola-metralhadora",
       "Granada de fumaca",
       "Granada atordoante"
     ],
-    "gadget": "BOMBA L�GICA"
+    "gadget": "BOMBA LOGICA",
+    "side": "Atacante",
+    "hole": "Anti-roam, flank, intel-denier, intel-gatherer",
+    "armor/speed": [2, 2]
   },
   "zofia": {
     "loadout": [
-      "LMG-EMETRALHADORA LEVE",
-      "M762RIFLE DE ASSALTO",
-      "RG15ARMA CURTA",
+      "LMG-E Metralhadora leve",
+      "M762 Rifle de assalto",
+      "RG15 Arma curta",
       "Carga de demolicao",
       "Claymore"
     ],
-    "gadget": "KS79 LIFELINE"
+    "gadget": "KS79 LIFELINE",
+    "side": "Atacante",
+    "hole": "Anti-roam, crowd-control, disable, flank, soft-breach",
+    "armor/speed": [2, 2]
   },
   "ela": {
     "loadout": [
-      "Scorpion EVO 3 A1SUBMETRALHADORA",
-      "FO-12ESPINGARDA",
-      "RG15ARMA CURTA",
+      "Scorpion EVO 3 A1 Submetralhadora",
+      "FO-12 Espingarda",
+      "RG15 Arma curta",
       "Arame farpado",
-      "Escudo ajust�vel"
+      "Escudo ajustavel"
     ],
-    "gadget": "MINA GRZMOT"
+    "gadget": "MINA GRZMOT",
+    "side": "Defensor",
+    "hole": "Crowd-control, roam, trap",
+    "armor/speed": [1, 3]
   },
   "ying": {
     "loadout": [
-      "T-95 LSWMETRALHADORA LEVE",
-      "SIX12ESPINGARDA",
-      "Q-929ARMA CURTA",
+      "T-95 LSW Metralhadora leve",
+      "SIX12 Espingarda",
+      "Q-929 Arma curta",
       "Carga de demolicao",
       "Claymore"
     ],
-    "gadget": "CANDELA"
+    "gadget": "CANDELA",
+    "side": "Atacante",
+    "hole": "Crowd-control, front-line",
+    "armor/speed": [2, 2]
   },
   "lesion": {
     "loadout": [
-      "SIX12 SDESPINGARDA",
-      "T-5 SMGSUBMETRALHADORA",
-      "Q-929ARMA CURTA",
+      "SIX12 SD Espingarda",
+      "T-5 SMG Submetralhadora",
+      "Q-929 Arma curta",
       "Granada de impacto",
-      "C�mera � prova de balas"
+      "Camera a prova de balas"
     ],
-    "gadget": "GU"
+    "gadget": "GU",
+    "side": "Defensor",
+    "hole": "Anchor, crowd-control, intel-gatherer, roam, trap",
+    "armor/speed": [2, 2]
   },
   "mira": {
     "loadout": [
-      "Vector .45 ACPSUBMETRALHADORA",
-      "ITA12LESPINGARDA",
-      "USP40ARMA CURTA",
-      "ITA12SESPINGARDA",
+      "Vector .45 ACP Submetralhadora",
+      "ITA12L Espingarda",
+      "USP40 Arma curta",
+      "ITA12S Espingarda",
       "Arame farpado",
       "C4"
     ],
-    "gadget": "ESPELHO NEGRO"
+    "gadget": "ESPELHO NEGRO",
+    "side": "Defensor",
+    "hole": "Anchor, intel-gatherer, secure",
+    "armor/speed": [3, 1]
   },
   "jackal": {
     "loadout": [
-      "C7ERIFLE DE ASSALTO",
-      "PDW9SUBMETRALHADORA",
-      "ITA12LESPINGARDA",
-      "USP40ARMA CURTA",
-      "ITA12SESPINGARDA",
+      "C7E Rifle de assalto",
+      "PDW9 Submetralhadora",
+      "ITA12L Espingarda",
+      "USP40 Arma curta",
+      "ITA12S Espingarda",
       "Claymore",
       "Granada de fumaca"
     ],
-    "gadget": "EYENOX MODEL III"
+    "gadget": "EYENOX MODEL III",
+    "side": "Atacante",
+    "hole": "Anti-roam, intel-gatherer",
+    "armor/speed": [2, 2]
   },
   "hibana": {
     "loadout": [
-      "Type-89RIFLE DE ASSALTO",
-      "SuperNovaESPINGARDA",
-      "P229 RCARMA CURTA",
-      "Bearing 9PISTOLA-METRALHADORA",
+      "Type-89 Rifle de assalto",
+      "SuperNova Espingarda",
+      "P229 RC Arma curta",
+      "Bearing 9 Pistola-metralhadora",
       "Granada atordoante",
       "Carga de demolicao"
     ],
-    "gadget": "X-KAIROS"
+    "gadget": "X-KAIROS",
+    "side": "Atacante",
+    "hole": "Back-line, front-line, hard-breach",
+    "armor/speed": [1, 3]
   },
   "echo": {
     "loadout": [
-      "MP5SDSUBMETRALHADORA",
-      "SuperNovaESPINGARDA",
-      "P229 RCARMA CURTA",
-      "Bearing 9PISTOLA-METRALHADORA",
-      "Escudo ajust�vel",
+      "MP5SD Submetralhadora",
+      "SuperNova Espingarda",
+      "P229 RC Arma curta",
+      "Bearing 9 Pistola-metralhadora",
+      "Escudo ajustavel",
       "Arame farpado"
     ],
-    "gadget": "YOKAI"
+    "gadget": "YOKAI",
+    "side": "Defensor",
+    "hole": "Anchor, crowd-control, intel-gatherer, secure",
+    "armor/speed": [3, 1]
   },
   "caveira": {
     "loadout": [
-      "M12SUBMETRALHADORA",
-      "SPAS-15ESPINGARDA",
+      "M12 Submetralhadora",
+      "SPAS-15 Espingarda",
       "Luison",
-      "C�mera � prova de balas",
+      "Camera a prova de balas",
       "Granada de impacto"
     ],
-    "gadget": "PASSOS SILENCIOSOS"
+    "gadget": "PASSOS SILENCIOSOS",
+    "side": "Defensor",
+    "hole": "Intel-denier, intel-gatherer, roam",
+    "armor/speed": [1, 3]
   },
-  "capit�o": {
+  "capitao": {
     "loadout": [
-      "PARA-308RIFLE DE ASSALTO",
-      "M249METRALHADORA LEVE",
-      "PRB92ARMA CURTA",
+      "PARA-308 Rifle de assalto",
+      "M249 Metralhadora leve",
+      "PRB92 Arma curta",
       "Claymore",
       "Granada atordoante"
     ],
-    "gadget": "BALESTRA T�TICA"
+    "gadget": "BALESTRA TATICA",
+    "side": "Atacante",
+    "hole": "Area-denial, flank, front-line",
+    "armor/speed": [1, 3]
   },
   "blackbeard": {
     "loadout": [
-      "Mk17 CQBRIFLE DE ASSALTO",
-      "SR-25RIFLE ATIRADOR DE ELITE",
-      "D-50ARMA CURTA",
+      "Mk17 CQB Rifle de assalto",
+      "SR-25 Rifle atirador de elite",
+      "D-50 Arma curta",
       "Carga de demolicao",
       "Granada atordoante"
     ],
-    "gadget": "ESCUDO PARA RIFLE"
+    "gadget": "ESCUDO PARA RIFLE",
+    "side": "Atacante",
+    "hole": "Back-line, covering-fire, shield",
+    "armor/speed": [2, 2]
   },
   "valkyrie": {
     "loadout": [
-      "MPXSUBMETRALHADORA",
-      "SPAS-12ESPINGARDA",
-      "D-50ARMA CURTA",
-      "Escudo ajust�vel",
+      "MPX Submetralhadora",
+      "SPAS-12 Espingarda",
+      "D-50 Arma curta",
+      "Escudo ajustavel",
       "C4"
     ],
-    "gadget": "BLACK EYE"
+    "gadget": "BLACK EYE",
+    "side": "Defensor",
+    "hole": "Intel-gatherer, roam",
+    "armor/speed": [2, 2]
   },
   "buck": {
     "loadout": [
-      "C8-SFWRIFLE DE ASSALTO",
-      "CAMRSRIFLE ATIRADOR DE ELITE",
-      "Mk1 9mmARMA CURTA",
+      "C8-SFW Rifle de assalto",
+      "CAMRS Rifle atirador de elite",
+      "Mk1 9mm Arma curta",
       "Granada frag",
       "Granada atordoante"
     ],
-    "gadget": "SKELETON KEY"
+    "gadget": "SKELETON KEY",
+    "side": "Atacante",
+    "hole": "Flank, soft-breach",
+    "armor/speed": [2, 2]
   },
   "frost": {
     "loadout": [
-      "Super 90ESPINGARDA",
-      "9mm C1SUBMETRALHADORA",
-      "Mk1 9mmARMA CURTA",
-      "C�mera � prova de balas",
+      "Super 90 Espingarda",
+      "9mm C1 Submetralhadora",
+      "Mk1 9mm Arma curta",
+      "Camera a prova de balas",
       "Arame farpado"
     ],
-    "gadget": "CAPACHO"
+    "gadget": "CAPACHO",
+    "side": "Defensor",
+    "hole": "Crowd-control, trap",
+    "armor/speed": [2, 2]
   },
   "mute": {
     "loadout": [
-      "MP5KSUBMETRALHADORA",
-      "M590A1ESPINGARDA",
-      "P226 Mk 25ARMA CURTA",
-      "SMG-11PISTOLA-METRALHADORA",
-      "C�mera � prova de balas",
+      "MP5K Submetralhadora",
+      "M590A1 Espingarda",
+      "P226 Mk 25 Arma curta",
+      "SMG-11 Pistola-metralhadora",
+      "Camera a prova de balas",
       "C4"
     ],
-    "gadget": "DISRUPTOR DE SINAL"
+    "gadget": "DISRUPTOR DE SINAL",
+    "side": "Defensor",
+    "hole": "Anti-hard-breach, intel-denier, secure",
+    "armor/speed": [2, 2]
   },
   "sledge": {
     "loadout": [
-      "L85A2RIFLE DE ASSALTO",
-      "M590A1ESPINGARDA",
-      "P226 Mk 25ARMA CURTA",
-      "SMG-11PISTOLA-METRALHADORA",
+      "L85A2 Rifle de assalto",
+      "M590A1 Espingarda",
+      "P226 Mk 25 Arma curta",
+      "SMG-11 Pistola-metralhadora",
       "Granada frag",
       "Granada atordoante"
     ],
-    "gadget": "MARRETA DE DEMOLI�AO"
+    "gadget": "MARRETA DE DEMOLICAO",
+    "side": "Atacante",
+    "hole": "Flank, soft-breach",
+    "armor/speed": [2, 2]
   },
   "smoke": {
     "loadout": [
-      "M590A1ESPINGARDA",
-      "FMG-9SUBMETRALHADORA",
-      "P226 Mk 25ARMA CURTA",
-      "SMG-11PISTOLA-METRALHADORA",
-      "Escudo ajust�vel",
+      "M590A1 Espingarda",
+      "FMG-9 Submetralhadora",
+      "P226 Mk 25 Arma curta",
+      "SMG-11 Pistola-metralhadora",
+      "Escudo ajustavel",
       "Arame farpado"
     ],
-    "gadget": "GRANADA DE G�S REMOTA"
+    "gadget": "GRANADA DE GAS REMOTA",
+    "side": "Defensor",
+    "hole": "Anchor, area-denial, secure",
+    "armor/speed": [2, 2]
   },
   "thatcher": {
     "loadout": [
-      "AR33RIFLE DE ASSALTO",
-      "L85A2RIFLE DE ASSALTO",
-      "M590A1ESPINGARDA",
-      "P226 Mk 25ARMA CURTA",
+      "AR33 Rifle de assalto",
+      "L85A2 Rifle de assalto",
+      "M590A1 Espingarda",
+      "P226 Mk 25 Arma curta",
       "Carga de demolicao",
       "Claymore"
     ],
-    "gadget": "GRANADA EMP"
+    "gadget": "GRANADA EMP",
+    "side": "Atacante",
+    "hole": "Back-line, disable",
+    "armor/speed": [2, 2]
   },
   "ash": {
     "loadout": [
-      "G36CRIFLE DE ASSALTO",
-      "R4-CRIFLE DE ASSALTO",
-      "5.7 USGARMA CURTA",
-      "M45 MEUSOCARMA CURTA",
+      "G36C Rifle de assalto",
+      "R4-C Rifle de assalto",
+      "5.7 USG Arma curta",
+      "M45 MEUSOC Arma curta",
       "Carga de demolicao",
       "Granada atordoante"
     ],
-    "gadget": "MUNI�AO EXPLOSIVA"
+    "gadget": "MUNICAO EXPLOSIVA",
+    "side": "Atacante",
+    "hole": "Disable, flank, front-line, soft-breach",
+    "armor/speed": [1, 3]
   },
   "castle": {
     "loadout": [
-      "UMP45SUBMETRALHADORA",
-      "M1014ESPINGARDA",
-      "5.7 USGARMA CURTA",
-      "M45 MEUSOCARMA CURTA",
-      "C�mera � prova de balas",
+      "UMP45 Submetralhadora",
+      "M1014 Espingarda",
+      "5.7 USG Arma curta",
+      "M45 MEUSOC Arma curta",
+      "Camera a prova de balas",
       "Granada de impacto"
     ],
-    "gadget": "PAINEL PROTETOR"
+    "gadget": "PAINEL PROTETOR",
+    "side": "Defensor",
+    "hole": "Anchor, secure",
+    "armor/speed": [2, 2]
   },
   "pulse": {
     "loadout": [
-      "UMP45SUBMETRALHADORA",
-      "M1014ESPINGARDA",
-      "5.7 USGARMA CURTA",
-      "M45 MEUSOCARMA CURTA",
+      "UMP45 Submetralhadora",
+      "M1014 Espingarda",
+      "5.7 USG Arma curta",
+      "M45 MEUSOC Arma curta",
       "Arame farpado",
       "C4"
     ],
-    "gadget": "SENSOR CARD�ACO"
+    "gadget": "SENSOR CARDIACO",
+    "side": "Defensor",
+    "hole": "Intel-gatherer, roam",
+    "armor/speed": [1, 3]
   },
   "thermite": {
     "loadout": [
-      "M1014ESPINGARDA",
-      "556xiRIFLE DE ASSALTO",
-      "5.7 USGARMA CURTA",
-      "M45 MEUSOCARMA CURTA",
+      "M1014 Espingarda",
+      "556xi Rifle de assalto",
+      "5.7 USG Arma curta",
+      "M45 MEUSOC Arma curta",
       "Claymore",
       "Granada atordoante"
     ],
-    "gadget": "CARGA EXOT�RMICA"
+    "gadget": "CARGA EXOTERMICA",
+    "side": "Atacante",
+    "hole": "Back-line, hard-breach",
+    "armor/speed": [2, 2]
   },
   "montagne": {
     "loadout": [
-      "ESCUDO EXTENS�VEL",
-      "P9ARMA CURTA",
-      "LFP586ARMA CURTA",
+      "ESCUDO EXTENSIVEL",
+      "P9 Arma curta",
+      "LFP586 Arma curta",
       "Granada atordoante",
       "Granada de fumaca"
     ],
-    "gadget": "ESCUDO EXTENS�VEL"
+    "gadget": "ESCUDO EXTENSIVEL",
+    "side": "Atacante",
+    "hole": "Shield",
+    "armor/speed": [3, 1]
   },
   "twitch": {
     "loadout": [
-      "F2RIFLE DE ASSALTO",
-      "417RIFLE ATIRADOR DE ELITE",
-      "SG-CQBESPINGARDA",
-      "P9ARMA CURTA",
-      "LFP586ARMA CURTA",
+      "F2 Rifle de assalto",
+      "417 Rifle atirador de elite",
+      "SG-CQB Espingarda",
+      "P9 Arma curta",
+      "LFP586 Arma curta",
       "Carga de demolicao",
       "Claymore"
     ],
-    "gadget": "DRONE DE CHOQUE"
+    "gadget": "DRONE DE CHOQUE",
+    "side": "Atacante",
+    "hole": "Back-line, disable, front-line, intel-gatherer",
+    "armor/speed": [2, 2]
   },
   "doc": {
     "loadout": [
-      "MP5SUBMETRALHADORA",
-      "P90SUBMETRALHADORA",
-      "SG-CQBESPINGARDA",
-      "P9ARMA CURTA",
-      "LFP586ARMA CURTA",
-      "C�mera � prova de balas",
+      "MP5 Submetralhadora",
+      "P90 Submetralhadora",
+      "SG-CQB Espingarda",
+      "P9 Arma curta",
+      "LFP586 Arma curta",
+      "Camera a prova de balas",
       "Arame farpado"
     ],
-    "gadget": "PISTOLA ESTIMULANTE"
+    "gadget": "PISTOLA ESTIMULANTE",
+    "side": "Defensor",
+    "hole": "Anchor, buff",
+    "armor/speed": [3, 1]
   },
   "rook": {
     "loadout": [
-      "MP5SUBMETRALHADORA",
-      "P90SUBMETRALHADORA",
-      "SG-CQBESPINGARDA",
-      "P9ARMA CURTA",
-      "LFP586ARMA CURTA",
+      "MP5 Submetralhadora",
+      "P90 Submetralhadora",
+      "SG-CQB Espingarda",
+      "P9 Arma curta",
+      "LFP586 Arma curta",
       "Arame farpado",
       "Granada de impacto"
     ],
-    "gadget": "PACOTE DE BLINDAGEM"
+    "gadget": "PACOTE DE BLINDAGEM",
+    "side": "Defensor",
+    "hole": "Anchor, buff",
+    "armor/speed": [3, 1]
   },
-  "j�ger": {
+  "jager": {
     "loadout": [
-      "M870ESPINGARDA",
-      "416-C CarbineRIFLE DE ASSALTO",
-      "P12ARMA CURTA",
+      "M870 Espingarda",
+      "416-C Carbine Rifle de assalto",
+      "P12 Arma curta",
       "Arame farpado",
-      "C�mera � prova de balas"
+      "Camera a prova de balas"
     ],
-    "gadget": "DEFESA ATIVA"
+    "gadget": "DEFESA ATIVA",
+    "side": "Defensor",
+    "hole": "Roam, secure",
+    "armor/speed": [1, 3]
   },
   "bandit": {
     "loadout": [
-      "MP7SUBMETRALHADORA",
-      "M870ESPINGARDA",
-      "P12ARMA CURTA",
+      "MP7 Submetralhadora",
+      "M870 Espingarda",
+      "P12 Arma curta",
       "Arame farpado",
       "C4"
     ],
-    "gadget": "FIO DE CHOQUE"
+    "gadget": "FIO DE CHOQUE",
+    "side": "Defensor",
+    "hole": "Anti-hard-breach, roam, secure",
+    "armor/speed": [1, 3]
   },
   "blitz": {
     "loadout": [
       "G52-Tactical Shield",
-      "P12ARMA CURTA",
+      "P12 Arma curta",
       "Granada de fumaca",
       "Carga de demolicao"
     ],
-    "gadget": "ESCUDO FLASH"
+    "gadget": "ESCUDO FLASH",
+    "side": "Atacante",
+    "hole": "Anti-roam, crowd-control, front-line, shield",
+    "armor/speed": [2, 2]
   },
   "iq": {
     "loadout": [
-      "AUG A2RIFLE DE ASSALTO",
-      "552 CommandoRIFLE DE ASSALTO",
-      "G8A1METRALHADORA LEVE",
-      "P12ARMA CURTA",
+      "AUG A2 Rifle de assalto",
+      "552 Commando Rifle de assalto",
+      "G8A1 Metralhadora leve",
+      "P12 Arma curta",
       "Carga de demolicao",
       "Claymore"
     ],
-    "gadget": "DETECTOR DE ELETR�NICOS"
+    "gadget": "DETECTOR DE ELETRONICOS",
+    "side": "Atacante",
+    "hole": "Disable, flank, front-line, intel-gatherer",
+    "armor/speed": [1, 3]
   },
   "fuze": {
     "loadout": [
-      "AK-12RIFLE DE ASSALTO",
-      "6P41METRALHADORA LEVE",
-      "Escudo bal�stico",
-      "PMMARMA CURTA",
-      "GSh-18ARMA CURTA",
+      "AK-12 Rifle de assalto",
+      "6P41 Metralhadora leve",
+      "Escudo balistico",
+      "PMM Arma curta",
+      "GSh-18 Arma curta",
       "Carga de demolicao",
       "Granada de fumaca"
     ],
-    "gadget": "PERFURADOR"
+    "gadget": "PERFURADOR",
+    "side": "Atacante",
+    "hole": "Area-denial, disable, flank",
+    "armor/speed": [3, 1]
   },
   "glaz": {
     "loadout": [
-      "OTs-03RIFLE ATIRADOR DE ELITE",
-      "PMMARMA CURTA",
-      "GSh-18ARMA CURTA",
+      "OTs-03 Rifle atirador de elite",
+      "PMM Arma curta",
+      "GSh-18 Arma curta",
       "Granada de fumaca",
       "Granada frag"
     ],
-    "gadget": "MIRA DE PRECISAO"
+    "gadget": "MIRA DE PRECISAO",
+    "side": "Atacante",
+    "hole": "Back-line, covering-fire, soft-breach",
+    "armor/speed": [2, 1]
   },
   "tachanka": {
     "loadout": [
-      "9x19VSNSUBMETRALHADORA",
-      "SASG-12ESPINGARDA",
-      "PMMARMA CURTA",
-      "GSh-18ARMA CURTA",
+      "9x19VSN Submetralhadora",
+      "SASG-12 Espingarda",
+      "PMM Arma curta",
+      "GSh-18 Arma curta",
       "Arame farpado",
-      "Escudo ajust�vel"
+      "Escudo ajustavel"
     ],
-    "gadget": "METRALHADORA FIXA"
+    "gadget": "METRALHADORA FIXA",
+    "side": "Defensor",
+    "hole": "Anchor, covering-fire, shield",
+    "armor/speed": [3, 1]
   },
   "kapkan": {
     "loadout": [
-      "9x19VSNSUBMETRALHADORA",
-      "SASG-12ESPINGARDA",
-      "PMMARMA CURTA",
-      "GSh-18ARMA CURTA",
+      "9x19VSN Submetralhadora",
+      "SASG-12 Espingarda",
+      "PMM Arma curta",
+      "GSh-18 Arma curta",
       "Granada de impacto",
       "C4"
     ],
-    "gadget": "BLOQUEADOR DE ENTRADA"
+    "gadget": "BLOQUEADOR DE ENTRADA",
+    "side": "Defensor",
+    "hole": "Trap",
+    "armor/speed": [2, 2]
   }
 }
