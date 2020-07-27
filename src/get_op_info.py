@@ -37,7 +37,7 @@ def get_op_info(op):  # TODO - add real name, birthday, birthplace
 
     # * LOADOUT
     weapons = soup.select('.operator__loadout__weapon')
-    gadget = unidecode(weapons[-1].text)
+    gadget = unidecode(weapons[-1].text).capitalize()
     for weapon in weapons:
         if weapon != weapons[-1]:
             info = weapon.find_all('p')
@@ -66,7 +66,7 @@ def get_op_info(op):  # TODO - add real name, birthday, birthplace
             speed += 1
 
     data = {
-        "loadout": loadout, "gadget": gadget, "side": side, "role": role, "armor/speed": [armor, speed]
+        "loadout": loadout, "gadget": gadget, "side": side, "role": role, "armor": armor, "speed": speed
     }
     return data
 

@@ -7,7 +7,11 @@
       "Carga de demolicao",
       "Granada de fumaca"
     ],
-    "gadget": "S.E.L.M.A. AQUA BREACHER"
+    "gadget": "S.e.l.m.a. aqua breacher",
+    "side": "Atacante",
+    "role": "Front-line, hard-breach",
+    "armor": 2,
+    "speed": 2
   },
   "melusi": {
     "loadout": [
@@ -17,7 +21,11 @@
       "Granada de impacto",
       "Escudo ajustavel"
     ],
-    "gadget": "BANSHEE SONIC DEFENSE"
+    "gadget": "Banshee sonic defense",
+    "side": "Defensor",
+    "role": "Crowd-control, intel-gatherer, secure",
+    "armor": 1,
+    "speed": 3
   },
   "oryx": {
     "loadout": [
@@ -28,7 +36,11 @@
       "Arame farpado",
       "Camera a prova de balas"
     ],
-    "gadget": "REMAH DASH"
+    "gadget": "Remah dash",
+    "side": "Defensor",
+    "role": "Roam, soft-breach",
+    "armor": 2,
+    "speed": 2
   },
   "iana": {
     "loadout": [
@@ -38,7 +50,11 @@
       "Granada frag",
       "Granada de fumaca"
     ],
-    "gadget": "REPLICADOR GEMINI"
+    "gadget": "Replicador gemini",
+    "side": "Atacante",
+    "role": "Intel-denier, intel-gatherer",
+    "armor": 2,
+    "speed": 2
   },
   "wamai": {
     "loadout": [
@@ -49,7 +65,11 @@
       "Arame farpado",
       "Escudo ajustavel"
     ],
-    "gadget": "sistema mag-net"
+    "gadget": "Sistema mag-net",
+    "side": "Defensor",
+    "role": "Anchor, secure",
+    "armor": 2,
+    "speed": 2
   },
   "kali": {
     "loadout": [
@@ -58,7 +78,11 @@
       "C75 Auto Pistola-metralhadora",
       "Carga de demolicao"
     ],
-    "gadget": "Claymore"
+    "gadget": "Claymore",
+    "side": "Atacante",
+    "role": "Back-line, covering-fire, disable",
+    "armor": 2,
+    "speed": 2
   },
   "amaru": {
     "loadout": [
@@ -69,7 +93,11 @@
       "Granada atordoante",
       "Claymore"
     ],
-    "gadget": "GANCHO GARRA"
+    "gadget": "Gancho garra",
+    "side": "Atacante",
+    "role": "Flank, front-line",
+    "armor": 2,
+    "speed": 2
   },
   "goyo": {
     "loadout": [
@@ -79,7 +107,11 @@
       "Granada de impacto",
       "C4"
     ],
-    "gadget": "ESCUDO VOLCAN"
+    "gadget": "Escudo volcan",
+    "side": "Defensor",
+    "role": "Area-denial, secure",
+    "armor": 2,
+    "speed": 2
   },
   "nokk": {
     "loadout": [
@@ -90,7 +122,11 @@
       "Carga de demolicao",
       "Claymore"
     ],
-    "gadget": "REDUTOR DE PRESENCA HEL"
+    "gadget": "Redutor de presenca hel",
+    "side": "Atacante",
+    "role": "Flank, intel-denier",
+    "armor": 2,
+    "speed": 2
   },
   "warden": {
     "loadout": [
@@ -101,7 +137,11 @@
       "Escudo ajustavel",
       "C4"
     ],
-    "gadget": "OLHAR COM SMARTGLASSES"
+    "gadget": "Olhar com smartglasses",
+    "side": "Defensor",
+    "role": "Anchor, intel-denier",
+    "armor": 2,
+    "speed": 2
   },
   "mozzie": {
     "loadout": [
@@ -112,7 +152,11 @@
       "Arame farpado",
       "C4"
     ],
-    "gadget": "LANCADOR DE PESTE"
+    "gadget": "Lancador de peste",
+    "side": "Defensor",
+    "role": "Intel-denier, intel-gatherer, secure",
+    "armor": 2,
+    "speed": 2
   },
   "gridlock": {
     "loadout": [
@@ -123,7 +167,11 @@
       "Granada de fumaca",
       "Carga de demolicao"
     ],
-    "gadget": "TRAX STINGERS"
+    "gadget": "Trax stingers",
+    "side": "Atacante",
+    "role": "Anti-roam, area-denial, crowd-control",
+    "armor": 3,
+    "speed": 1
   },
   "nomad": {
     "loadout": [
@@ -133,7 +181,11 @@
       "Carga de demolicao",
       "Granada atordoante"
     ],
-    "gadget": "LANCADOR DE AIRJAB"
+    "gadget": "Lancador de airjab",
+    "side": "Atacante",
+    "role": "Anti-roam, crowd-control, trap",
+    "armor": 2,
+    "speed": 2
   },
   "kaid": {
     "loadout": [
@@ -143,7 +195,11 @@
       "Arame farpado",
       "C4"
     ],
-    "gadget": "RTILA ELECTROCLAW"
+    "gadget": "Rtila electroclaw",
+    "side": "Defensor",
+    "role": "Anchor, anti-hard-breach, secure",
+    "armor": 3,
+    "speed": 1
   },
   "clash": {
     "loadout": [
@@ -153,7 +209,11 @@
       "Arame farpado",
       "Granada de impacto"
     ],
-    "gadget": "ESCUDO CCE"
+    "gadget": "Escudo cce",
+    "side": "Defensor",
+    "role": "Crowd-control, intel-gatherer, secure, shield",
+    "armor": 3,
+    "speed": 1
   },
   "maverick": {
     "loadout": [
@@ -163,7 +223,11 @@
       "Granada atordoante",
       "Claymore"
     ],
-    "gadget": "MACARICO DE DEMOLICAO"
+    "gadget": "Macarico de demolicao",
+    "side": "Atacante",
+    "role": "Back-line, disable, flank, hard-breach",
+    "armor": 1,
+    "speed": 3
   },
   "maestro": {
     "loadout": [
@@ -174,7 +238,11 @@
       "Arame farpado",
       "Granada de impacto"
     ],
-    "gadget": "EVIL EYE"
+    "gadget": "Evil eye",
+    "side": "Defensor",
+    "role": "Anchor, area-denial, intel-gatherer, secure",
+    "armor": 3,
+    "speed": 1
   },
   "alibi": {
     "loadout": [
@@ -185,7 +253,11 @@
       "Granada de impacto",
       "Escudo ajustavel"
     ],
-    "gadget": "PRISMA"
+    "gadget": "Prisma",
+    "side": "Defensor",
+    "role": "Intel-denier, intel-gatherer, roam, trap",
+    "armor": 1,
+    "speed": 3
   },
   "lion": {
     "loadout": [
@@ -197,7 +269,11 @@
       "Granada atordoante",
       "Claymore"
     ],
-    "gadget": "EE-ONE-D"
+    "gadget": "Ee-one-d",
+    "side": "Atacante",
+    "role": "Anti-roam, back-line, crowd-control, intel-gatherer",
+    "armor": 2,
+    "speed": 2
   },
   "finka": {
     "loadout": [
@@ -209,7 +285,11 @@
       "Carga de demolicao",
       "Granada frag"
     ],
-    "gadget": "PICO DE ADRENALINA"
+    "gadget": "Pico de adrenalina",
+    "side": "Atacante",
+    "role": "Back-line, buff",
+    "armor": 2,
+    "speed": 2
   },
   "vigil": {
     "loadout": [
@@ -220,7 +300,11 @@
       "Camera a prova de balas",
       "Granada de impacto"
     ],
-    "gadget": "ERC-7"
+    "gadget": "Erc-7",
+    "side": "Defensor",
+    "role": "Intel-denier, roam",
+    "armor": 1,
+    "speed": 3
   },
   "dokkaebi": {
     "loadout": [
@@ -231,7 +315,11 @@
       "Granada de fumaca",
       "Granada atordoante"
     ],
-    "gadget": "BOMBA LOGICA"
+    "gadget": "Bomba logica",
+    "side": "Atacante",
+    "role": "Anti-roam, flank, intel-denier, intel-gatherer",
+    "armor": 2,
+    "speed": 2
   },
   "zofia": {
     "loadout": [
@@ -241,7 +329,11 @@
       "Carga de demolicao",
       "Claymore"
     ],
-    "gadget": "KS79 LIFELINE"
+    "gadget": "Ks79 lifeline",
+    "side": "Atacante",
+    "role": "Anti-roam, crowd-control, disable, flank, soft-breach",
+    "armor": 2,
+    "speed": 2
   },
   "ela": {
     "loadout": [
@@ -251,7 +343,11 @@
       "Arame farpado",
       "Escudo ajustavel"
     ],
-    "gadget": "MINA GRZMOT"
+    "gadget": "Mina grzmot",
+    "side": "Defensor",
+    "role": "Crowd-control, roam, trap",
+    "armor": 1,
+    "speed": 3
   },
   "ying": {
     "loadout": [
@@ -261,7 +357,11 @@
       "Carga de demolicao",
       "Claymore"
     ],
-    "gadget": "CANDELA"
+    "gadget": "Candela",
+    "side": "Atacante",
+    "role": "Crowd-control, front-line",
+    "armor": 2,
+    "speed": 2
   },
   "lesion": {
     "loadout": [
@@ -271,7 +371,11 @@
       "Granada de impacto",
       "Camera a prova de balas"
     ],
-    "gadget": "GU"
+    "gadget": "Gu",
+    "side": "Defensor",
+    "role": "Anchor, crowd-control, intel-gatherer, roam, trap",
+    "armor": 2,
+    "speed": 2
   },
   "mira": {
     "loadout": [
@@ -282,7 +386,11 @@
       "Arame farpado",
       "C4"
     ],
-    "gadget": "ESPELHO NEGRO"
+    "gadget": "Espelho negro",
+    "side": "Defensor",
+    "role": "Anchor, intel-gatherer, secure",
+    "armor": 3,
+    "speed": 1
   },
   "jackal": {
     "loadout": [
@@ -294,7 +402,11 @@
       "Claymore",
       "Granada de fumaca"
     ],
-    "gadget": "EYENOX MODEL III"
+    "gadget": "Eyenox model iii",
+    "side": "Atacante",
+    "role": "Anti-roam, intel-gatherer",
+    "armor": 2,
+    "speed": 2
   },
   "hibana": {
     "loadout": [
@@ -305,7 +417,11 @@
       "Granada atordoante",
       "Carga de demolicao"
     ],
-    "gadget": "X-KAIROS"
+    "gadget": "X-kairos",
+    "side": "Atacante",
+    "role": "Back-line, front-line, hard-breach",
+    "armor": 1,
+    "speed": 3
   },
   "echo": {
     "loadout": [
@@ -316,7 +432,11 @@
       "Escudo ajustavel",
       "Arame farpado"
     ],
-    "gadget": "YOKAI"
+    "gadget": "Yokai",
+    "side": "Defensor",
+    "role": "Anchor, crowd-control, intel-gatherer, secure",
+    "armor": 3,
+    "speed": 1
   },
   "caveira": {
     "loadout": [
@@ -326,7 +446,11 @@
       "Camera a prova de balas",
       "Granada de impacto"
     ],
-    "gadget": "PASSOS SILENCIOSOS"
+    "gadget": "Passos silenciosos",
+    "side": "Defensor",
+    "role": "Intel-denier, intel-gatherer, roam",
+    "armor": 1,
+    "speed": 3
   },
   "capitao": {
     "loadout": [
@@ -336,7 +460,11 @@
       "Claymore",
       "Granada atordoante"
     ],
-    "gadget": "BALESTRA TATICA"
+    "gadget": "Balestra tatica",
+    "side": "Atacante",
+    "role": "Area-denial, flank, front-line",
+    "armor": 1,
+    "speed": 3
   },
   "blackbeard": {
     "loadout": [
@@ -346,7 +474,11 @@
       "Carga de demolicao",
       "Granada atordoante"
     ],
-    "gadget": "ESCUDO PARA RIFLE"
+    "gadget": "Escudo para rifle",
+    "side": "Atacante",
+    "role": "Back-line, covering-fire, shield",
+    "armor": 2,
+    "speed": 2
   },
   "valkyrie": {
     "loadout": [
@@ -356,7 +488,11 @@
       "Escudo ajustavel",
       "C4"
     ],
-    "gadget": "BLACK EYE"
+    "gadget": "Black eye",
+    "side": "Defensor",
+    "role": "Intel-gatherer, roam",
+    "armor": 2,
+    "speed": 2
   },
   "buck": {
     "loadout": [
@@ -366,7 +502,11 @@
       "Granada frag",
       "Granada atordoante"
     ],
-    "gadget": "SKELETON KEY"
+    "gadget": "Skeleton key",
+    "side": "Atacante",
+    "role": "Flank, soft-breach",
+    "armor": 2,
+    "speed": 2
   },
   "frost": {
     "loadout": [
@@ -376,7 +516,11 @@
       "Camera a prova de balas",
       "Arame farpado"
     ],
-    "gadget": "CAPACHO"
+    "gadget": "Capacho",
+    "side": "Defensor",
+    "role": "Crowd-control, trap",
+    "armor": 2,
+    "speed": 2
   },
   "mute": {
     "loadout": [
@@ -387,7 +531,11 @@
       "Camera a prova de balas",
       "C4"
     ],
-    "gadget": "DISRUPTOR DE SINAL"
+    "gadget": "Disruptor de sinal",
+    "side": "Defensor",
+    "role": "Anti-hard-breach, intel-denier, secure",
+    "armor": 2,
+    "speed": 2
   },
   "sledge": {
     "loadout": [
@@ -398,7 +546,11 @@
       "Granada frag",
       "Granada atordoante"
     ],
-    "gadget": "MARRETA DE DEMOLICAO"
+    "gadget": "Marreta de demolicao",
+    "side": "Atacante",
+    "role": "Flank, soft-breach",
+    "armor": 2,
+    "speed": 2
   },
   "smoke": {
     "loadout": [
@@ -409,7 +561,11 @@
       "Escudo ajustavel",
       "Arame farpado"
     ],
-    "gadget": "GRANADA DE GAS REMOTA"
+    "gadget": "Granada de gas remota",
+    "side": "Defensor",
+    "role": "Anchor, area-denial, secure",
+    "armor": 2,
+    "speed": 2
   },
   "thatcher": {
     "loadout": [
@@ -420,7 +576,11 @@
       "Carga de demolicao",
       "Claymore"
     ],
-    "gadget": "GRANADA EMP"
+    "gadget": "Granada emp",
+    "side": "Atacante",
+    "role": "Back-line, disable",
+    "armor": 2,
+    "speed": 2
   },
   "ash": {
     "loadout": [
@@ -431,7 +591,11 @@
       "Carga de demolicao",
       "Granada atordoante"
     ],
-    "gadget": "MUNICAO EXPLOSIVA"
+    "gadget": "Municao explosiva",
+    "side": "Atacante",
+    "role": "Disable, flank, front-line, soft-breach",
+    "armor": 1,
+    "speed": 3
   },
   "castle": {
     "loadout": [
@@ -442,7 +606,11 @@
       "Camera a prova de balas",
       "Granada de impacto"
     ],
-    "gadget": "PAINEL PROTETOR"
+    "gadget": "Painel protetor",
+    "side": "Defensor",
+    "role": "Anchor, secure",
+    "armor": 2,
+    "speed": 2
   },
   "pulse": {
     "loadout": [
@@ -453,7 +621,11 @@
       "Arame farpado",
       "C4"
     ],
-    "gadget": "SENSOR CARDIACO"
+    "gadget": "Sensor cardiaco",
+    "side": "Defensor",
+    "role": "Intel-gatherer, roam",
+    "armor": 1,
+    "speed": 3
   },
   "thermite": {
     "loadout": [
@@ -464,7 +636,11 @@
       "Claymore",
       "Granada atordoante"
     ],
-    "gadget": "CARGA EXOTERMICA"
+    "gadget": "Carga exotermica",
+    "side": "Atacante",
+    "role": "Back-line, hard-breach",
+    "armor": 2,
+    "speed": 2
   },
   "montagne": {
     "loadout": [
@@ -474,7 +650,11 @@
       "Granada atordoante",
       "Granada de fumaca"
     ],
-    "gadget": "ESCUDO EXTENSIVEL"
+    "gadget": "Escudo extensivel",
+    "side": "Atacante",
+    "role": "Shield",
+    "armor": 3,
+    "speed": 1
   },
   "twitch": {
     "loadout": [
@@ -486,7 +666,11 @@
       "Carga de demolicao",
       "Claymore"
     ],
-    "gadget": "DRONE DE CHOQUE"
+    "gadget": "Drone de choque",
+    "side": "Atacante",
+    "role": "Back-line, disable, front-line, intel-gatherer",
+    "armor": 2,
+    "speed": 2
   },
   "doc": {
     "loadout": [
@@ -498,7 +682,11 @@
       "Camera a prova de balas",
       "Arame farpado"
     ],
-    "gadget": "PISTOLA ESTIMULANTE"
+    "gadget": "Pistola estimulante",
+    "side": "Defensor",
+    "role": "Anchor, buff",
+    "armor": 3,
+    "speed": 1
   },
   "rook": {
     "loadout": [
@@ -510,7 +698,11 @@
       "Arame farpado",
       "Granada de impacto"
     ],
-    "gadget": "PACOTE DE BLINDAGEM"
+    "gadget": "Pacote de blindagem",
+    "side": "Defensor",
+    "role": "Anchor, buff",
+    "armor": 3,
+    "speed": 1
   },
   "jager": {
     "loadout": [
@@ -520,7 +712,11 @@
       "Arame farpado",
       "Camera a prova de balas"
     ],
-    "gadget": "DEFESA ATIVA"
+    "gadget": "Defesa ativa",
+    "side": "Defensor",
+    "role": "Roam, secure",
+    "armor": 1,
+    "speed": 3
   },
   "bandit": {
     "loadout": [
@@ -530,7 +726,11 @@
       "Arame farpado",
       "C4"
     ],
-    "gadget": "FIO DE CHOQUE"
+    "gadget": "Fio de choque",
+    "side": "Defensor",
+    "role": "Anti-hard-breach, roam, secure",
+    "armor": 1,
+    "speed": 3
   },
   "blitz": {
     "loadout": [
@@ -539,7 +739,11 @@
       "Granada de fumaca",
       "Carga de demolicao"
     ],
-    "gadget": "ESCUDO FLASH"
+    "gadget": "Escudo flash",
+    "side": "Atacante",
+    "role": "Anti-roam, crowd-control, front-line, shield",
+    "armor": 2,
+    "speed": 2
   },
   "iq": {
     "loadout": [
@@ -550,7 +754,11 @@
       "Carga de demolicao",
       "Claymore"
     ],
-    "gadget": "DETECTOR DE ELETRONICOS"
+    "gadget": "Detector de eletronicos",
+    "side": "Atacante",
+    "role": "Disable, flank, front-line, intel-gatherer",
+    "armor": 1,
+    "speed": 3
   },
   "fuze": {
     "loadout": [
@@ -562,7 +770,11 @@
       "Carga de demolicao",
       "Granada de fumaca"
     ],
-    "gadget": "PERFURADOR"
+    "gadget": "Perfurador",
+    "side": "Atacante",
+    "role": "Area-denial, disable, flank",
+    "armor": 3,
+    "speed": 1
   },
   "glaz": {
     "loadout": [
@@ -572,7 +784,11 @@
       "Granada de fumaca",
       "Granada frag"
     ],
-    "gadget": "MIRA DE PRECISAO"
+    "gadget": "Mira de precisao",
+    "side": "Atacante",
+    "role": "Back-line, covering-fire, soft-breach",
+    "armor": 2,
+    "speed": 1
   },
   "tachanka": {
     "loadout": [
@@ -583,7 +799,11 @@
       "Arame farpado",
       "Escudo ajustavel"
     ],
-    "gadget": "METRALHADORA FIXA"
+    "gadget": "Metralhadora fixa",
+    "side": "Defensor",
+    "role": "Anchor, covering-fire, shield",
+    "armor": 3,
+    "speed": 1
   },
   "kapkan": {
     "loadout": [
@@ -594,6 +814,10 @@
       "Granada de impacto",
       "C4"
     ],
-    "gadget": "BLOQUEADOR DE ENTRADA"
+    "gadget": "Bloqueador de entrada",
+    "side": "Defensor",
+    "role": "Trap",
+    "armor": 2,
+    "speed": 2
   }
 }

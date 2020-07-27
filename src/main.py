@@ -61,7 +61,7 @@ async def on_message(message):
                 await message.channel.send(f"Please give me a valid agent")
             else:
                 try:
-                    await message.channel.send(format_op(op))
+                    await message.channel.send(embed=format_op(op))
                 except:
                     await message.channel.send(f"Failed to find {op}'s information! Please check agent's name and try again")
         elif message.content.lower().startswith(f'{prefix}player'):

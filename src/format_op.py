@@ -1,19 +1,17 @@
 def format_op(op):
+    import discord
     from ops import ops
-    string = '```'
+    msg = discord.Embed(title=f'{op.capitalize()}', colour=discord.Color.from_rgb(244, 175, 44))
     for item in ops[op].keys():
         if type(ops[op][item]) is list:
-            if item == 'armor/speed': 
-                string += f'Armor: {ops[op][item][0]} | '
-                string += f'Speed: {ops[op][item][1]}'
-            else:
-                string += f'{item.capitalize()}: '
-                for subitem in ops[op][item]:
-                    if subitem == ops[op][item][-1]:
-                        string += f'{subitem}\n'
-                    else:    
-                        string += f'{subitem}, '
+            string = ''
+            for subitem in ops[op][item]:
+                if subitem == ops[op][item][-1]:
+                    string += f'{subitem}'
+                else:    
+                    string += f'{subitem}, '
+            msg.add_field(name=f'{item.capitalize()}', value=string)
         else:
-            string += f'{item.capitalize()} - {ops[op][item]}\n'
-    string += '```'
-    return string
+            msg.add_field(name=f'{item.capitalize()}', value=f'{ops[op][item]}')
+    
+    return msg
