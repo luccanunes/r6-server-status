@@ -40,9 +40,10 @@ def get_server_status():
     return {"last-update": last_update, "pc": pc, "ps4": ps4, "xbox": xbox}
 
 
-def format_dict(dict):
+def format_dict(dict, lst_upd):
     import discord
     msg = discord.Embed(title=f"{dict['name']} Server Status", colour=discord.Color.from_rgb(244, 175, 44))
     for key in list(dict.keys())[1:]:
         msg.add_field(name=f'\n{key}', value=f'{dict[key]}')
+    msg.add_field(name='Last Update', value=lst_upd)
     return msg
