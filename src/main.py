@@ -7,9 +7,10 @@ from format_op import format_op
 from unidecode import unidecode
 from player_info import get_player_info, format_player_info
 from live import get_lives, format_lives
+from change_prefix import change_prefix
+from time import sleep
 
 client = discord.Client()
-
 
 @client.event
 async def on_ready():
@@ -21,7 +22,15 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    prefix = '?'
+    global prefix
+    log = open(r'logs/log.txt', 'r+')
+    found_prefix = False
+    for line in log.readlines():
+        if str(message.guild.id) in line:
+            prefix = line.split(' ')[1].replace('\n', '')
+            found_prefix = True
+    if not found_prefix:
+        prefix = '?'
     if message.content.lower().startswith(f'{prefix}'):
         if message.content.lower().startswith(f'{prefix}help'):
             msg = discord.Embed(title='Commands', description="Here's a list of all commands!", colour=discord.Color.from_rgb(244, 175, 44))
@@ -32,6 +41,7 @@ async def on_message(message):
             msg.add_field(name=f'{prefix}agent (agent name)', value="shows agent's general info")
             msg.add_field(name=f'{prefix}player (name) (platform)', value="tracks player's info")
             msg.add_field(name=f'{prefix}live', value=f"shows live streams on twitch ({prefix}lives also works)")
+            msg.add_field(name=f'{prefix}prefix (new prefix)', value=f"changes the server's command prefix")
             await message.channel.send(embed=msg)
         elif 'stats' in message.content.lower():
             # await message.channel.send("```Getting info...```")
@@ -60,12 +70,14 @@ async def on_message(message):
             try:
                 op = unidecode(message.content.lower().split(' ')[1])
             except:
-                await message.channel.send(f"Please give me a valid agent")
+                msg = discord.Embed(title='Error', description=f"Please give me a valid agent", colour=discord.Color.from_rgb(255, 0, 0))
+                await message.channel.send(embed=msg)
             else:
                 try:
                     await message.channel.send(embed=format_op(op))
                 except:
-                    await message.channel.send(f"Failed to find {op}'s information! Please check agent's name and try again")
+                    msg = discord.Embed(title='Error', description=f"Failed to find {op}'s information! Please check agent's name and try again", colour=discord.Color.from_rgb(255, 0, 0))
+                    await message.channel.send(embed=msg)
         elif message.content.lower().startswith(f'{prefix}player'):
             try:
                 player = unidecode(message.content.split(' ')[1])
@@ -90,5 +102,19 @@ async def on_message(message):
             lives = get_lives()[:6]
             msg = format_lives(lives)
             await message.channel.send(embed=msg)
+        elif message.content.lower().startswith(f'{prefix}prefix'):
+            try:
+                new_prefix = message.content.split(' ')[1]
+            except:
+                msg = discord.Embed(title='Error', description=f"Please give me a valid prefix", colour=discord.Color.from_rgb(255, 0, 0))
+                await message.channel.send(embed=msg)
+            else:
+                log = open(r'logs/log.txt', 'a')
+                log.write(f'{message.guild.id}: {new_prefix}\n')
+                log.close()
+                change_prefix(new_prefix)
+                msg = discord.Embed(title='Prefix', description=f"Sucessfully updated prefix to {new_prefix}", colour=discord.Color.from_rgb(244, 175, 44))
+                await message.channel.send(embed=msg)
+                
 
 client.run('NzM2NzY2NDg0MDU5MjU4OTMx.XxzlQg._8lktwlNtqNccRRO8vu62LQwHQI')
