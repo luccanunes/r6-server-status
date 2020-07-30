@@ -1,6 +1,6 @@
 def get_server_status():
     from selenium import webdriver
-    from console_log import clog
+    from packages.console_log import clog
 
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")

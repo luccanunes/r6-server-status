@@ -1,13 +1,13 @@
 import discord
 import asyncio
-from get_server_status import get_server_status, format_dict
-from get_news import get_news
-from ops import ops
-from format_op import format_op
+from packages.get_server_status import get_server_status, format_dict
+from packages.get_news import get_news
+from packages.ops import ops
+from packages.format_op import format_op
 from unidecode import unidecode
-from player_info import get_player_info, format_player_info
-from live import get_lives, format_lives
-from change_prefix import change_prefix
+from packages.player_info import get_player_info, format_player_info
+from packages.live import get_lives, format_lives
+from packages.prefix import change_prefix
 from time import sleep
 
 client = discord.Client()
