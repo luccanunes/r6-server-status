@@ -8,6 +8,7 @@ from unidecode import unidecode
 from packages.player_info import get_player_info, format_player_info
 from packages.live import get_lives, format_lives
 from packages.prefix import change_prefix
+from packages.quote import get_quote
 from time import sleep
 
 client = discord.Client()
@@ -23,7 +24,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     global prefix
-    log = open(r'logs/log.txt', 'r+')
+    log = open(r'log.txt', 'r+')
     found_prefix = False
     for line in log.readlines():
         if str(message.guild.id) in line:
@@ -42,6 +43,7 @@ async def on_message(message):
             msg.add_field(name=f'{prefix}player (name) (platform)', value="tracks player's info (default platform is PC)")
             msg.add_field(name=f'{prefix}live', value=f"shows live streams on twitch ({prefix}lives also works)")
             msg.add_field(name=f'{prefix}prefix (new prefix)', value=f"changes the server's command prefix")
+            msg.add_field(name=f'{prefix}quote', value=f"generates a very wise quote.")
             await message.channel.send(embed=msg)
         elif 'stats' in message.content.lower():
             # await message.channel.send("```Getting info...```")
@@ -110,12 +112,13 @@ async def on_message(message):
                 msg = discord.Embed(title='Error', description=f"Please give me a valid prefix", colour=discord.Color.from_rgb(255, 0, 0))
                 await message.channel.send(embed=msg)
             else:
-                log = open(r'logs/log.txt', 'a')
+                log = open(r'log.txt', 'a')
                 log.write(f'{message.guild.id}: {new_prefix}\n')
                 log.close()
                 change_prefix(new_prefix)
                 msg = discord.Embed(title='Prefix', description=f"Sucessfully updated prefix to {new_prefix}", colour=discord.Color.from_rgb(244, 175, 44))
                 await message.channel.send(embed=msg)
-                
+        elif message.content.lower().startswith(f'{prefix.lower()}quote'):
+            await message.channel.send(get_quote())
 
 client.run('NzM2NzY2NDg0MDU5MjU4OTMx.XxzlQg._8lktwlNtqNccRRO8vu62LQwHQI')
