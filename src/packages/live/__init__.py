@@ -9,7 +9,7 @@ def get_lives():
     options.add_argument("--start-maximized")
     options.add_argument("--headless")
     driver = webdriver.Chrome(
-        executable_path=r'src\chromedriver.exe', chrome_options=options
+        executable_path=r'.\chromedriver.exe', chrome_options=options
     )
     driver.get(URL)
     sleep(3)

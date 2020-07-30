@@ -5,7 +5,7 @@ def get_server_status():
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
     driver = webdriver.Chrome(
-        executable_path=r'src\chromedriver.exe', chrome_options=options
+        executable_path=r'.\chromedriver.exe', chrome_options=options
     )
     driver.get('https://rainbow6.ubisoft.com/status/')
     driver.implicitly_wait(2)
