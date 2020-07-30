@@ -31,34 +31,34 @@ async def on_message(message):
             found_prefix = True
     if not found_prefix:
         prefix = '?'
-    if message.content.lower().startswith(f'{prefix}'):
-        if message.content.lower().startswith(f'{prefix}help'):
+    if message.content.lower().startswith(f'{prefix.lower()}'):
+        if message.content.lower().startswith(f'{prefix.lower()}help'):
             msg = discord.Embed(title='Commands', description="Here's a list of all commands!", colour=discord.Color.from_rgb(244, 175, 44))
             msg.set_thumbnail(url='https://i.imgur.com/Vgrtz5u.png')
             msg.add_field(name=f'{prefix}pcstats', value='shows info regarding the status of the PC servers')
             msg.add_field(name=f'{prefix}ps4stats', value='shows info regarding the status of the PS4 servers')
             msg.add_field(name=f'{prefix}xboxstats', value='shows info regarding the status of the Xbox One servers')
             msg.add_field(name=f'{prefix}agent (agent name)', value="shows agent's general info")
-            msg.add_field(name=f'{prefix}player (name) (platform)', value="tracks player's info")
+            msg.add_field(name=f'{prefix}player (name) (platform)', value="tracks player's info (default platform is PC)")
             msg.add_field(name=f'{prefix}live', value=f"shows live streams on twitch ({prefix}lives also works)")
             msg.add_field(name=f'{prefix}prefix (new prefix)', value=f"changes the server's command prefix")
             await message.channel.send(embed=msg)
         elif 'stats' in message.content.lower():
             # await message.channel.send("```Getting info...```")
             await message.channel.send("Working on it...")
-            if message.content.lower().startswith(f'{prefix}pcstats'):
+            if message.content.lower().startswith(f'{prefix.lower()}pcstats'):
                 status = get_server_status()
                 info = format_dict(status["pc"], status['last-update'])
                 await message.channel.send(embed=info)
-            elif message.content.lower().startswith(f'{prefix}ps4stats'):
+            elif message.content.lower().startswith(f'{prefix.lower()}ps4stats'):
                 status = get_server_status()
                 info = format_dict(status["ps4"], status['last-update'])
                 await message.channel.send(embed=info)
-            elif message.content.lower().startswith(f'{prefix}xboxstats'):
+            elif message.content.lower().startswith(f'{prefix.lower()}xboxstats'):
                 status = get_server_status()
                 info = format_dict(status["xbox"], status['last-update'])
                 await message.channel.send(embed=info)
-        elif message.content.lower().startswith(f'{prefix}news'):
+        elif message.content.lower().startswith(f'{prefix.lower()}news'):
             # await message.channel.send("```Getting info...```")
             await message.channel.send("Working on it...")
             news = get_news()
@@ -66,7 +66,7 @@ async def on_message(message):
             for new, date in news.items():
                 string += f'{new} - {date}\n'
             await message.channel.send(string)
-        elif message.content.lower().startswith(f'{prefix}agent'):
+        elif message.content.lower().startswith(f'{prefix.lower()}agent'):
             try:
                 op = unidecode(message.content.lower().split(' ')[1])
             except:
@@ -78,16 +78,18 @@ async def on_message(message):
                 except:
                     msg = discord.Embed(title='Error', description=f"Failed to find {op}'s information! Please check agent's name and try again", colour=discord.Color.from_rgb(255, 0, 0))
                     await message.channel.send(embed=msg)
-        elif message.content.lower().startswith(f'{prefix}player'):
+        elif message.content.lower().startswith(f'{prefix.lower()}player'):
             try:
                 player = unidecode(message.content.split(' ')[1])
-                platform = unidecode(message.content.lower().split(' ')[2]).lower()
             except:
                 msg = discord.Embed(title='Error', description=f"Please give me a valid player name and/or platform", colour=discord.Color.from_rgb(255, 0, 0))
                 await message.channel.send(embed=msg)
             else:
                 try:
-                    # await message.channel.send("```Getting info...```")
+                    if len(message.content.split(' ')) == 2:
+                        platform = 'pc'
+                    else:
+                        platform = unidecode(message.content.lower().split(' ')[2]).lower()
                     await message.channel.send("Working on it...")
                     player_info = format_player_info(get_player_info(platform, player))
                     await message.channel.send(embed=player_info["overview"])
@@ -96,13 +98,12 @@ async def on_message(message):
                 except:
                     msg = discord.Embed(title='Error', description=f"Failed to find {player}'s information! Please check player's name and platform and try again", colour=discord.Color.from_rgb(255, 0, 0))
                     await message.channel.send(embed=msg)
-        elif message.content.lower().startswith(f'{prefix}lives') or message.content.lower().startswith(f'{prefix}live'):
-            # await message.channel.send("```Getting info...```")
+        elif message.content.lower().startswith(f'{prefix.lower()}lives') or message.content.lower().startswith(f'{prefix.lower()}live'):
             await message.channel.send("Working on it...")
             lives = get_lives()[:6]
             msg = format_lives(lives)
             await message.channel.send(embed=msg)
-        elif message.content.lower().startswith(f'{prefix}prefix'):
+        elif message.content.lower().startswith(f'{prefix.lower()}prefix'):
             try:
                 new_prefix = message.content.split(' ')[1]
             except:
