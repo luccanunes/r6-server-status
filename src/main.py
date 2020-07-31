@@ -120,5 +120,24 @@ async def on_message(message):
                 await message.channel.send(embed=msg)
         elif message.content.lower().startswith(f'{prefix.lower()}quote'):
             await message.channel.send(get_quote())
+        elif message.content.lower().startswith(f'{prefix.lower()}clear'):
+            msg_list = message.content.split(' ')
+            if len(msg_list) == 2:
+                try:
+                    deleted = await message.channel.purge(limit=int(msg_list[1]) + 1)
+                except:
+                    msg = discord.Embed(title='Error', description=f"Please give me a valid number of messages or upgrade my permissions!", colour=discord.Color.from_rgb(255, 0, 0))
+                    await message.channel.send(embed=msg)
+                else:
+                    msg = discord.Embed(title='Clear', description=f"Sucessfully deleted {len(deleted)} messages", colour=discord.Color.from_rgb(244, 175, 44))
+                    await message.channel.send(embed=msg)
+            else:
+                try:
+                    deleted = await message.channel.purge(limit=100)
+                    msg = discord.Embed(title='Clear', description=f"Sucessfully deleted {len(deleted)} messages", colour=discord.Color.from_rgb(244, 175, 44))
+                    await message.channel.send(embed=msg)
+                except:
+                    msg = discord.Embed(title='Error', description=f"Please upgrade my permissions!", colour=discord.Color.from_rgb(255, 0, 0))
+                    await message.channel.send(embed=msg)
 
 client.run('NzM2NzY2NDg0MDU5MjU4OTMx.XxzlQg._8lktwlNtqNccRRO8vu62LQwHQI')
