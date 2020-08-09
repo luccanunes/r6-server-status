@@ -46,22 +46,20 @@ async def on_message(message):
             msg.add_field(name=f'{prefix}quote', value=f"generates a very wise quote.")
             await message.channel.send(embed=msg)
         elif 'stats' in message.content.lower():
-            # await message.channel.send("```Getting info...```")
             await message.channel.send("Working on it...")
             if message.content.lower().startswith(f'{prefix.lower()}pcstats'):
                 status = get_server_status()
-                info = format_dict(status["pc"], status['last-update'])
+                info = format_dict(status["pc"])
                 await message.channel.send(embed=info)
             elif message.content.lower().startswith(f'{prefix.lower()}ps4stats'):
                 status = get_server_status()
-                info = format_dict(status["ps4"], status['last-update'])
+                info = format_dict(status["ps4"])
                 await message.channel.send(embed=info)
             elif message.content.lower().startswith(f'{prefix.lower()}xboxstats'):
                 status = get_server_status()
-                info = format_dict(status["xbox"], status['last-update'])
+                info = format_dict(status["xbox"])
                 await message.channel.send(embed=info)
         elif message.content.lower().startswith(f'{prefix.lower()}news'):
-            # await message.channel.send("```Getting info...```")
             await message.channel.send("Working on it...")
             news = get_news()
             string = ''
