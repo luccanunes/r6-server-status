@@ -140,4 +140,4 @@ async def on_message(message):
                     msg = discord.Embed(title='Error', description=f"Please upgrade my permissions!", colour=discord.Color.from_rgb(255, 0, 0))
                     await message.channel.send(embed=msg)
 
-client.run('NzM2NzY2NDg0MDU5MjU4OTMx.XxzlQg._8lktwlNtqNccRRO8vu62LQwHQI')
+client.run(TOKEN)
