@@ -16,3 +16,4 @@
 | `-help` | Lists all available commands |
 | `-prefix` | Changes that server's command prefix |
 | `-clear {number of messages to clear}` | Delete that number of messages, if not specified, the number is set to 100. |
+| `-quote` | Generates a very wise quote. |
