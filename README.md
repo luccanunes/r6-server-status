@@ -1,8 +1,5 @@
-<div align="center">
-  <img height="200" src="https://i.imgur.com/Cnmq1DC.png">
- <h1>R6 Stats</h1>
-  <p>A simple Discord Bot for Rainbow Six: Siege players.</p>
-</div>
+# R6 Stats
+A simple Discord Bot for Rainbow Six: Siege players.
 
 ## Commands
 
