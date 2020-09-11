@@ -1,7 +1,7 @@
 import discord
 import asyncio
 from packages.get_server_status import get_server_status, format_dict
-from packages.get_news import get_news
+from packages.get_news import get_news, format_news
 from packages.ops import ops
 from packages.format_op import format_op
 from unidecode import unidecode
@@ -9,6 +9,7 @@ from packages.player_info import get_player_info, format_player_info
 from packages.live import get_lives, format_lives
 from packages.prefix import change_prefix
 from packages.quote import get_quote
+from packages.get_op_info import get_op_info
 from time import sleep
 
 client = discord.Client()
@@ -62,10 +63,8 @@ async def on_message(message):
         elif message.content.lower().startswith(f'{prefix.lower()}news'):
             await message.channel.send("Working on it...")
             news = get_news()
-            string = ''
-            for new, date in news.items():
-                string += f'{new} - {date}\n'
-            await message.channel.send(string)
+            emb = format_news(news)
+            await message.channel.send(embed=emb)
         elif message.content.lower().startswith(f'{prefix.lower()}agent'):
             try:
                 op = unidecode(message.content.lower().split(' ')[1])
@@ -110,7 +109,7 @@ async def on_message(message):
                 msg = discord.Embed(title='Error', description=f"Please give me a valid prefix", colour=discord.Color.from_rgb(255, 0, 0))
                 await message.channel.send(embed=msg)
             else:
-                log = open(r'log.txt', 'a')
+                log = open(r'./log.txt', 'a')
                 log.write(f'{message.guild.id}: {new_prefix}\n')
                 log.close()
                 change_prefix(new_prefix)
@@ -138,4 +137,4 @@ async def on_message(message):
                     msg = discord.Embed(title='Error', description=f"Please upgrade my permissions!", colour=discord.Color.from_rgb(255, 0, 0))
                     await message.channel.send(embed=msg)
 
-client.run('NzM2NzY2NDg0MDU5MjU4OTMx.XxzlQg._8lktwlNtqNccRRO8vu62LQwHQI')
+client.run('NzM2NzY2NDg0MDU5MjU4OTMx.XxzlQg.OvTdh8RIjbJYfc5hwamZ2fFNCf8')

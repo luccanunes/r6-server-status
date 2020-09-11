@@ -26,3 +26,10 @@ def get_news():
         news_dates[new] = date
 
     return news_dates
+
+def format_news(news):
+    import discord
+    emb = discord.Embed(title=f'News', colour=discord.Color.from_rgb(244, 175, 44))
+    for new, date in news.items():
+        emb.add_field(name=date, value=new)
+    return emb
