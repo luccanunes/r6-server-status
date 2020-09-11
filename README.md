@@ -10,7 +10,7 @@
 | `-player {player name}` | Lists that player's level, rank, K/D ratio and lots of others stats |
 | `-live` | Shows a list of streamers that are currently live, and gives you a link to watch it |
 
-### The above commands are all the commands related to the game, as some additional features we have:
+### The above commands are all related to the game it self, as some additional features we have:
 | Command | Description |
 |------|-----|
 | `-help` | Lists all available commands |
