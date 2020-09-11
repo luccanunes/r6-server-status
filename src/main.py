@@ -1,7 +1,7 @@
 import discord
 import asyncio
 from packages.get_server_status import get_server_status, format_dict
-from packages.get_news import get_news
+from packages.get_news import get_news, format_news
 from packages.ops import ops
 from packages.format_op import format_op
 from unidecode import unidecode
@@ -9,7 +9,13 @@ from packages.player_info import get_player_info, format_player_info
 from packages.live import get_lives, format_lives
 from packages.prefix import change_prefix
 from packages.quote import get_quote
+from packages.get_op_info import get_op_info
 from time import sleep
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+TOKEN = os.getenv('TOKEN')
 
 client = discord.Client()
 
@@ -46,28 +52,24 @@ async def on_message(message):
             msg.add_field(name=f'{prefix}quote', value=f"generates a very wise quote.")
             await message.channel.send(embed=msg)
         elif 'stats' in message.content.lower():
-            # await message.channel.send("```Getting info...```")
             await message.channel.send("Working on it...")
             if message.content.lower().startswith(f'{prefix.lower()}pcstats'):
                 status = get_server_status()
-                info = format_dict(status["pc"], status['last-update'])
+                info = format_dict(status["pc"])
                 await message.channel.send(embed=info)
             elif message.content.lower().startswith(f'{prefix.lower()}ps4stats'):
                 status = get_server_status()
-                info = format_dict(status["ps4"], status['last-update'])
+                info = format_dict(status["ps4"])
                 await message.channel.send(embed=info)
             elif message.content.lower().startswith(f'{prefix.lower()}xboxstats'):
                 status = get_server_status()
-                info = format_dict(status["xbox"], status['last-update'])
+                info = format_dict(status["xbox"])
                 await message.channel.send(embed=info)
         elif message.content.lower().startswith(f'{prefix.lower()}news'):
-            # await message.channel.send("```Getting info...```")
             await message.channel.send("Working on it...")
             news = get_news()
-            string = ''
-            for new, date in news.items():
-                string += f'{new} - {date}\n'
-            await message.channel.send(string)
+            emb = format_news(news)
+            await message.channel.send(embed=emb)
         elif message.content.lower().startswith(f'{prefix.lower()}agent'):
             try:
                 op = unidecode(message.content.lower().split(' ')[1])
@@ -75,8 +77,10 @@ async def on_message(message):
                 msg = discord.Embed(title='Error', description=f"Please give me a valid agent", colour=discord.Color.from_rgb(255, 0, 0))
                 await message.channel.send(embed=msg)
             else:
+                await message.channel.send("Working on it...")  
                 try:
-                    await message.channel.send(embed=format_op(op))
+                    emb = format_op(get_op_info(op))
+                    await message.channel.send(embed=emb)
                 except:
                     msg = discord.Embed(title='Error', description=f"Failed to find {op}'s information! Please check agent's name and try again", colour=discord.Color.from_rgb(255, 0, 0))
                     await message.channel.send(embed=msg)
@@ -112,7 +116,7 @@ async def on_message(message):
                 msg = discord.Embed(title='Error', description=f"Please give me a valid prefix", colour=discord.Color.from_rgb(255, 0, 0))
                 await message.channel.send(embed=msg)
             else:
-                log = open(r'log.txt', 'a')
+                log = open(r'./log.txt', 'a')
                 log.write(f'{message.guild.id}: {new_prefix}\n')
                 log.close()
                 change_prefix(new_prefix)

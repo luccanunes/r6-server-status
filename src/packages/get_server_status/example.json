@@ -1,0 +1,35 @@
+[
+  {
+    "AppID ": "e3d5ea9e-50bd-43b7-88bf-39794f4e3d40",
+    "MDM": "4073",
+    "SpaceID": "5172a557-50b5-4665-b7db-e3f2e8c5041d",
+    "Category": "Instance",
+    "Name": "Rainbow Six Siege - PC - LIVE",
+    "Platform": "PC",
+    "Status": "Online",
+    "Maintenance": null,
+    "ImpactedFeatures": []
+  },
+  {
+    "AppID ": "fb4cc4c9-2063-461d-a1e8-84a7d36525fc",
+    "MDM": "14922",
+    "SpaceID": "05bfb3f7-6c21-4c42-be1f-97a33fb5cf66",
+    "Category": "Instance",
+    "Name": "Rainbow Six Siege - PS4 - LIVE",
+    "Platform": "PS4",
+    "Status": "Online",
+    "Maintenance": null,
+    "ImpactedFeatures": []
+  },
+  {
+    "AppID ": "4008612d-3baf-49e4-957a-33066726a7bc",
+    "MDM": "4075",
+    "SpaceID": "98a601e5-ca91-4440-b1c5-753f601a2c90",
+    "Category": "Instance",
+    "Name": "Rainbow Six Siege - XBOXONE - LIVE",
+    "Platform": "XBOXONE",
+    "Status": "Online",
+    "Maintenance": null,
+    "ImpactedFeatures": []
+  }
+]
