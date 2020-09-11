@@ -1,5 +1,6 @@
-# R6-stats
- A simple Discord Bot for Rainbow Six: Siege players.
+# R6 Stats <img src='https://i.imgur.com/5BuCXCC.png' width='12px'/> 
+A simple Discord Bot for Rainbow Six: Siege players.
+
 ## Commands
 
 | Command | Description |
@@ -10,10 +11,11 @@
 | `-player {player name}` | Lists that player's level, rank, K/D ratio and lots of others stats |
 | `-live` | Shows a list of streamers that are currently live, and gives you a link to watch it |
 
-### The above commands are all the commands related to the game, as some additional features we have:
+### The above commands are all related to the game it self, as some additional features we have:
 | Command | Description |
 |------|-----|
 | `-help` | Lists all available commands |
 | `-prefix` | Changes that server's command prefix |
 | `-clear {number of messages to clear}` | Delete that number of messages, if not specified, the number is set to 100. |
 | `-quote` | Generates a very wise quote. |
+
