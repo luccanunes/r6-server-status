@@ -11,6 +11,11 @@ from packages.prefix import change_prefix
 from packages.quote import get_quote
 from packages.get_op_info import get_op_info
 from time import sleep
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+TOKEN = os.getenv('TOKEN')
 
 client = discord.Client()
 
@@ -72,8 +77,10 @@ async def on_message(message):
                 msg = discord.Embed(title='Error', description=f"Please give me a valid agent", colour=discord.Color.from_rgb(255, 0, 0))
                 await message.channel.send(embed=msg)
             else:
+                await message.channel.send("Working on it...")  
                 try:
-                    await message.channel.send(embed=format_op(op))
+                    emb = format_op(get_op_info(op))
+                    await message.channel.send(embed=emb)
                 except:
                     msg = discord.Embed(title='Error', description=f"Failed to find {op}'s information! Please check agent's name and try again", colour=discord.Color.from_rgb(255, 0, 0))
                     await message.channel.send(embed=msg)
@@ -137,4 +144,4 @@ async def on_message(message):
                     msg = discord.Embed(title='Error', description=f"Please upgrade my permissions!", colour=discord.Color.from_rgb(255, 0, 0))
                     await message.channel.send(embed=msg)
 
-client.run('NzM2NzY2NDg0MDU5MjU4OTMx.XxzlQg.OvTdh8RIjbJYfc5hwamZ2fFNCf8')
+client.run(TOKEN)
