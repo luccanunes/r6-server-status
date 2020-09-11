@@ -1,5 +1,9 @@
-# R6-stats <img alt="R6 Stats logo" width="26px" src="https://i.imgur.com/Cnmq1DC.png"/>
- A simple Discord Bot for Rainbow Six: Siege players.
+<div align="center">
+  <img height="200" src="https://i.imgur.com/Cnmq1DC.png">
+ <h1>R6 Stats</h1>
+  <p>A simple Discord Bot for Rainbow Six: Siege players.</p>
+</div>
+
 ## Commands
 
 | Command | Description |
@@ -17,3 +21,4 @@
 | `-prefix` | Changes that server's command prefix |
 | `-clear {number of messages to clear}` | Delete that number of messages, if not specified, the number is set to 100. |
 | `-quote` | Generates a very wise quote. |
+
