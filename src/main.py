@@ -2,7 +2,6 @@ import discord
 import asyncio
 from packages.get_server_status import get_server_status, format_dict
 from packages.get_news import get_news, format_news
-from packages.ops import ops
 from packages.format_op import format_op
 from unidecode import unidecode
 from packages.player_info import get_player_info, format_player_info
