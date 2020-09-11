@@ -1,4 +1,4 @@
-# R6 Stats <img src='https://i.imgur.com/5BuCXCC.png' height='30px' justify='center'/> 
+# R6 Stats <img src='https://i.imgur.com/5BuCXCC.png' width='12px'/> 
 A simple Discord Bot for Rainbow Six: Siege players.
 
 ## Commands
